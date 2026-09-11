@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 //test git 
 
-import HeaderLogoTwo from "@/assets/images/logo2.png";
+import HeaderLogoTwo from "@/assets/images/spa-logo-1.png";
 
-import HeaderLogo from "@/assets/images/logo.png";
+import HeaderLogo from "@/assets/images/spa-logo-1.png";
 import NavMenu from './Menu/NavMenu';
 import { TeamSocialLinks } from '@/components/common/SocialLinks';
 import UseSticky from '@/hooks/UseSticky';
@@ -29,9 +29,9 @@ const HeaderOne = ({ style }: any) => {
             <div className="col-lg-6 col-md-6">
               <div className="solar-top-menu">
                 <ul>
-                  <li className="line"><a href="#"><i className="bi bi-geo-alt"></i> 12/7 new town, USA</a></li>
-                  <li><a href="#"><i className="bi bi-telephone"></i> +199(980) 6915</a></li>
-                  <li><a href="#"><i className="bi bi-envelope"></i> example@gmail.com</a></li>
+                {/* <li className="line"><a href="#"><i className="bi bi-geo-alt"></i> 12/7 new town, USA</a></li> */}
+                  <li><a href="tel:1800979707"><i className="bi bi-telephone"></i> 1800 979 707</a></li>
+                  <li><a href="mailto:info@solpoweraustralia.com.au"><i className="bi bi-envelope"></i> info@solpoweraustralia.com.au</a></li>
                 </ul>
               </div>
             </div>

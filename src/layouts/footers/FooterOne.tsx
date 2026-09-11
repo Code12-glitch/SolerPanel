@@ -4,41 +4,53 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { CopyRight, TeamSocialLinks } from '@/components/common/SocialLinks';
 
-import footer_logo from  "@/assets/images/resource/footer-logo.png";
+import footer_logo from  "@/assets/images/resource/spa-logo-1.png";
 import footer_thumb from  "@/assets/images/resource/footer-thumb.png";
 
 
 const footer_content = {
-  sm_info: "Feugiat a ligula rutrum luctus primis ultrice nteger congue magna at pretium purus a pretium ligula rutrum and luctus risus",
+  sm_info: "SOLPOWER AUSTRALIA is a leading and local solar solutions provider in Australia. ",
   list_title: "Industry Sectors",
   list_items: [
     {
-      title: "Contact us",
-      link: "/contact",
+      title: "Home",
+      link: "/home",
     },
     {
-      title: "How it Works",
+      title: "About Us",
       link: "#",
     },
     {
-      title: "Office Create",
+      title: "Services",
       link: "#",
     },
     {
-      title: "Residential Explore",
+      title: "Product",
       link: "#",
     },
     {
-      title: "Terms & Services",
+      title: "Battery",
+      link: "#",
+    },
+    {
+      title: "Our Projects",
+      link: "#",
+    },
+    {
+      title: "Blog",
+      link: "#",
+    },
+    {
+      title: "Contact",
       link: "#",
     },
   ],
   title: "Get In Touch",
-  address: "Valentin, Street Road 24, New York, USA - 67452",
-  phone: "(+02) 574 - 328 - 30",
-  email: "example@email.com",
+  phone: "1800 979 707",
+  address: "WOTSO, 2/194, Varsity Parade, Varsity Lakes, QLD, 4227",
+  email: "info@solpoweraustralia.com.au",
   bootom_links: [
-    'Privercy',
+    'Privacy',
     'Term & Conditions',
     'Legal',
   ]

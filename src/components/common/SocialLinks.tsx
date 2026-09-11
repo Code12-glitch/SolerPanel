@@ -3,14 +3,15 @@ import Link from "next/link";
 
 interface social_links_type {
   link: string;
-  target: string;
+  target?: string;
+  color?: string;
   icon: string;
 }
 
 
 const social_links: social_links_type[] = [
   {
-    link: "http://facebook.com",
+    link: "https://www.facebook.com/people/Solpower-Australia/61561254433771/",
     target: "_blank",
     icon: "fab fa-facebook-f",
   },
@@ -25,9 +26,9 @@ const social_links: social_links_type[] = [
     icon: "fab fa-linkedin-in",
   },
   {
-    link: "https://www.vimeo.com",
-    target: "_blank",
-    icon: "fab fa-vimeo-v",
+    link: "https://www.instagram.com/solpoweraustralia",
+    color: "footer-insta",
+    icon: "fa-brands fa-instagram",
   },
 ];
 
@@ -59,7 +60,7 @@ interface social_links_type_2 {
 
 const social_links_2: social_links_type_2[] = [
   {
-    link: "http://facebook.com",
+    link: "https://www.facebook.com/people/Solpower-Australia/61561254433771/",
     color: "footer-facebook",
     icon: "fa-brands fa-facebook-f",
   },
@@ -74,7 +75,7 @@ const social_links_2: social_links_type_2[] = [
     icon: "fa-brands fa-linkedin-in",
   },
   {
-    link: "http://www.instagram.com",
+    link: "https://www.instagram.com/solpoweraustralia",
     color: "footer-insta",
     icon: "fa-brands fa-instagram",
   },
@@ -108,7 +109,7 @@ interface DataType {
 const team_social_data: DataType[] = [
   {
     id: 1,
-    link: "http://facebook.com",
+    link: "https://www.facebook.com/people/Solpower-Australia/61561254433771/",
     icon: "fab fa-facebook-f",
   },
   {
@@ -118,12 +119,12 @@ const team_social_data: DataType[] = [
   },
   {
     id: 3,
-    link: "http://vimeo.com",
-    icon: "fab fa-vimeo-v",
+    link: "http://www.linkedin.com",
+    icon: "fa-brands fa-linkedin-in",
   },
   {
-    id: 3,
-    link: "http://instagram.com",
+    id: 4,
+    link: "https://www.instagram.com/solpoweraustralia",
     icon: "fab fa-instagram",
   },
 ]
@@ -153,7 +154,7 @@ type copy_right_text_type = {
 
 const copy_right_text: copy_right_text_type = {
   copy_right: <>
-     ©{new Date().getFullYear()} | Alrights reserved by <a href="https://themeforest.net/user/theme_house" target="_blank">ThemeHouse</a>
+     ©{new Date().getFullYear()} | Solpower Australia | Website Designed & Managed by <a href="https://oz-digital.com.au/" target="_blank">Ozy Digital Pty Ltd</a>, Glenfield.
   </>
 }
 

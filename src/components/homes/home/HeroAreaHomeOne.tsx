@@ -15,28 +15,28 @@ interface DataType {
 const hero_slider_data: DataType[] = [
   {
     id: 1,
-    subtitle: "Our Solar Systems",
-    title: <>Energize Society By <br /> Reliadle Energy</>,
-    sm_des: "The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity",
+    subtitle: "Powering a Brighter Future",
+    title: <>Secure Your Battery <br /> Rebate Today!</>,
+    sm_des: ''
   },
   {
     id: 2,
-    subtitle: "Our Solar Systems",
-    title: <>Reliadle Energy By <br /> Energize Society </>,
-    sm_des: "The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity",
+    subtitle: "Powering a Brighter Future",
+    title: <>Secure Your Battery <br /> Rebate Today!</>,
+    sm_des: ''
   },
   // update for swiper 
   {
     id: 3,
-    subtitle: "Our Solar Systems",
-    title: <>Energize Society By <br /> Reliadle Energy</>,
-    sm_des: "The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity",
+    subtitle: "Powering a Brighter Future",
+    title: <>Secure Your Battery <br /> Rebate Today!</>,
+    sm_des: ''
   },
   {
     id: 4,
-    subtitle: "Our Solar Systems",
-    title: <>Energize Society By <br /> Reliadle Energy</>,
-    sm_des: "The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity",
+    subtitle: "Powering a Brighter Future",
+    title: <>Secure Your Battery <br /> Rebate Today!</>,
+    sm_des: ''
   },
 ]
 

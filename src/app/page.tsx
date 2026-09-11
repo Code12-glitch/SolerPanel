@@ -4,8 +4,8 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
 export const metadata = {
-  title: 'Main Home - SolerPanel-Solar & Renewable Energy React Next js Template',
-  description: 'The Solar Panel React Next js template is a modern and responsive design specifically created for websites related to solar energy and renewable energy solutions',
+  title: 'Solar Energy Company | Solar Energy System for Home',
+  description: 'Solpower Australia Is Your Trusted Local Solar Energy Company, Offering Efficient Solar Energy Systems For Homes. Switch To Smart, Sustainable Solar Solutions Today!',
 }
 
 
