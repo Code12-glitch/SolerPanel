@@ -12,53 +12,53 @@ interface DataType {
   feature_list_2: string[];
 }
 
-const tab_data: DataType[] = [
+const tab_data:DataType[] = [
   {
     tab_id: "home",
     tab_name: "About Us",
-    sm_info: "SOLPOWER AUSTRALIA is a local Solar Energy Company focused on delivering smart, efficient, and future-ready solar solutions for homes and businesses across Australia.",
+    sm_info: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaquecy epsa abillo inventore veritatis architecto beatae",
     feature_list_1: [
-      "Custom solar system design",
-      "Trusted local installation team",
-      "Energy efficiency planning",
+      "Best Insurance Agency",
+      "Trusted & Experience",
+      "Key Managerial Persons",
     ],
     feature_list_2: [
-      "Premium solar products",
-      "Long-term performance support",
-      "Clean energy advice",
-    ],
+      "Dedicated Support",
+      "Board Composition",
+      "Board Committees",
+    ]
   },
   {
     tab_id: "profile",
     tab_name: "Mission",
-    sm_info: "Our mission is to make solar energy more affordable and accessible so more Australian households can lower power bills and contribute to a cleaner, greener future.",
+    sm_info: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaquecy epsa abillo inventore veritatis architecto beatae",
     feature_list_1: [
-      "Affordable solar products",
-      "Tailored energy solutions",
-      "Practical cost savings",
+      "Key Managerial Persons",
+      "Best Insurance Agency",
+      "Trusted & Experience",
     ],
     feature_list_2: [
-      "High-quality installation",
-      "Future-ready system planning",
-      "Sustainable energy support",
-    ],
+      "Board Composition",
+      "Board Committees",
+      "Dedicated Support",
+    ]
   },
   {
     tab_id: "contact",
-    tab_name: "Vision",
-    sm_info: "We envision a future where renewable energy becomes the standard, helping communities reduce emissions while enjoying reliable, efficient, and innovative solar technology.",
+    tab_name: "Visiont",
+    sm_info: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaquecy epsa abillo inventore veritatis architecto beatae",
     feature_list_1: [
-      "Smart solar technology",
-      "Clean energy leadership",
-      "Strong customer trust",
+      "Trusted & Experience",
+      "Best Insurance Agency",
+      "Key Managerial Persons",
     ],
     feature_list_2: [
-      "Reliable long-term systems",
-      "Nationwide solar growth",
-      "Better energy futures",
-    ],
+      "Board Committees",
+      "Board Composition",
+      "Dedicated Support",
+    ]
   },
-];
+]
 
 const AboutAreaHomeOne = (style: any) => {
 
@@ -131,13 +131,10 @@ const AboutAreaHomeOne = (style: any) => {
                 </ul>
                 <div className="tab-content" id="pills-tabContent">
                   {tab_data.map((item, index) =>
-                    <div
-                      key={index}
-                      className={`tab-pane fade ${index === currentTab ? "show active" : ""}`}
-                      id={`pills-${item.tab_id}`}
-                      role="tabpanel"
-                      aria-labelledby={`pills-${item.tab_id}-tab`}
-                    >
+                    <div key={index} className={`tab-pane fade ${index === 0 ? "show active" : ""}`} 
+                    id={`pills-${item.tab_id}`} 
+                    role="tabpanel" 
+                    aria-labelledby={`pills-${item.tab_id}-tab`}>
                       <div className="tabs_item">
                         <div className="tabs-items-content">
                           <div className="about-content-discription wow slideInLeft">
@@ -147,18 +144,18 @@ const AboutAreaHomeOne = (style: any) => {
                             <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                               <div className="about-list wow slideInLeft">
                                 <ul>
-                                  {item.feature_list_1.map((feature, i) => (
-                                    <li key={i}> <i className="bi bi-chevron-double-right"></i> {feature}</li>
-                                  ))}
+                                  {item.feature_list_1.map((item, i) =>
+                                    <li key={i}> <i className="bi bi-chevron-double-right"></i> {item}</li>
+                                  )}
                                 </ul>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                               <div className="about-list wow slideInRight">
                                 <ul>
-                                  {item.feature_list_2.map((feature, i) => (
-                                    <li key={i}><i className="bi bi-chevron-double-right"></i> {feature}</li>
-                                  ))}
+                                  {item.feature_list_2.map((item, i) =>
+                                    <li key={i}><i className="bi bi-chevron-double-right"></i> {item}</li>
+                                  )}
                                 </ul>
                               </div>
                             </div>
