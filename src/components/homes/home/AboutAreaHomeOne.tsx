@@ -16,7 +16,7 @@ const tab_data:DataType[] = [
   {
     tab_id: "home",
     tab_name: "About Us",
-    sm_info: "SOLPOWER AUSTRALIA is a local Solar Energy Company. At SOLPOWER AUSTRALIA, we believe that when it comes to the Solar Energy System, no two properties are the same, as it is purely dependent on the current power consumption and future planning of the household. That’s why, we provide customised options of Solar PV Systems from On-grid Solar PV Systems to Full Battery Back Up Systems to everyone based on their individual needs",
+    sm_info: "SOLPOWER AUSTRALIA is a local Solar Energy Company. At SOLPOWER AUSTRALIA, we believe that when it comes to the Solar Energy System, no two properties are the same, as it is purely dependent on the current power consumption and future planning of the household. That's why we provide customised options of Solar PV Systems from On-grid Solar PV Systems to Full Battery Back Up Systems to everyone based on their individual needs. Also, when it comes to the system installation, we employ highly experienced Solar Accreditation Australia (SAA) Accredited installers only, as we follow the rules of the New Energy Tech Consumer Code (NETCC) very strictly. We can offer on-site quotes by our friendly and highly experienced solar expert considering the roof size, your current power consumption pattern and future planning, the type of power to your property, etc. to cut down the power bill by going greener.",
     // feature_list_1: [
     //   "Best Insurance Agency",
     //   "Trusted & Experience",
@@ -52,12 +52,12 @@ const tab_data:DataType[] = [
     tab_name: "Products",
     sm_info: "We Use",
     feature_list_1: [
-      "Inverter",
-      "Solar PV Panel",
+      "Inverter - Fronius, Enphase, SolarEdge, Sungrow, Goodwe, Solis, Growatt, Huawei, FIMER, SolaX, etc.",
+      "Battery - Tesla, LG, Sungrow, BYD, Alpha-ESS, Growatt, Sofar, etc.",
     ],
     feature_list_2: [
-      "Mountings",
-      "Battery",
+      "Solar PV Panel - REC, Jinko, Trina, Canadian, Longi, Hyundai, Solaredge, Seraphim, TONGWEI (TW), EGing, JA Solar, Risen, Astronergy, Akcome, HT-SAAE etc.",
+      "Mountings - Clenergy, MIBET, Titan, ANTAI, etc.",
     ]
   },
 ]
