@@ -8,13 +8,16 @@ import Image from 'next/image';
 const contact_area_content = {
   subtitle: 'Why Choose Us',
   title: 'Best Solution For Your',
-  sm_des: "Risus commodo viverra maecenas accumsan lacus vel facilisis. Horem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+  sm_des: "At SOLPOWER AUSTRALIA, we are one of the best and leading solar solutions provider in Australia, choose us as:",
   festures: [
-    "Best of Perfect Shine",
-    "Geeen Energy Green Natural",
-    "Solar Energy fou All The ",
+    "Personalised support: We understand that each property and client requirement are different, and thus we offer tailored solutions for solar PV systems.",
+    "Local and trusted provider: We are a local solar power company offering quality support.",
+    "Friendly and experienced team: At SOLPOWER AUSTRALIA, we have a team of highly qualified and experienced people to help clients with their solar requirements.",
+    "100% client satisfaction: Customer satisfaction is our top priority. We pride ourselves on transparent communication, professional service, and reliable support long after installation.",
+    "Advanced products: We only use advanced and top-quality products.",
+    "Comprehensive support: We handle everything from system design and permitting to installation and maintenance, ensuring a hassle-free experience from start to finish.",
   ],
-  btn_text: "Get A Quout",
+  btn_text: "Get A Quote",
   phone: <>Emergency Call <span>+123956(6565)556-02</span></>,
 
 }

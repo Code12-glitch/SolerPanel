@@ -40,9 +40,9 @@ const ServiceAreaHomeOne = ({style, style_2}: any) => {
                         <Image src={item.icon} alt="image-title" />
                       </div>
                       <div className="service-text">
-                        <h4><Link href="/service-details">{item.title}</Link></h4>
+                        <h4><Link href={`/service-details/${item.slug}`}>{item.title}</Link></h4>
                         <p>{item.sm_des}</p>
-                        <Link href="/service-details">Read More <i className="bi bi-arrow-up-right"></i></Link>
+                        <Link href={`/service-details/${item.slug}`}>Read More <i className="bi bi-arrow-up-right"></i></Link>
                       </div>
                     </div>
                   </div>

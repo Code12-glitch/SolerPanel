@@ -41,10 +41,10 @@ const service_details_content: DataType = {
   phone: "(123) 456-7890",
   email: "example@gmail.com",
 }
-const { title, sm_des_1, sm_des_2, title_2, categories, help_title, help_info, phone, email } = service_details_content
 
-
-const ServiceDetailsArea = () => {
+const ServiceDetailsArea = ({ service }: { service?: any }) => {
+  const detail = service || service_details_content;
+  const { title, sm_des_1, sm_des_2, title_2, categories, help_title, help_info, phone, email } = detail;
   return (
     <>
       <div className="service-details-section">
@@ -95,9 +95,9 @@ const ServiceDetailsArea = () => {
                 {/* <!-- widget categories menu --> */}
                 <div className="widget-categories-menu asd">
                   <ul>
-                    {categories.map((item, i) => (
-                      <li><Link href="/service-details" style={{ color: "#000" }}>{item}<span><i className="bi bi-arrow-right"></i></span></Link></li>                      
-                    ))} 
+                    {categories.map((item: string, i: number) => (
+                      <li key={i}><Link href="/service-details" style={{ color: "#000" }}>{item}<span><i className="bi bi-arrow-right"></i></span></Link></li>
+                    ))}
                   </ul>
                 </div>
               </div>
