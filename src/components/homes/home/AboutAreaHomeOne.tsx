@@ -16,46 +16,48 @@ const tab_data:DataType[] = [
   {
     tab_id: "home",
     tab_name: "About Us",
-    sm_info: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaquecy epsa abillo inventore veritatis architecto beatae",
-    feature_list_1: [
-      "Best Insurance Agency",
-      "Trusted & Experience",
-      "Key Managerial Persons",
-    ],
-    feature_list_2: [
-      "Dedicated Support",
-      "Board Composition",
-      "Board Committees",
-    ]
+    sm_info: "SOLPOWER AUSTRALIA is a local Solar Energy Company. At SOLPOWER AUSTRALIA, we believe that when it comes to the Solar Energy System, no two properties are the same, as it is purely dependent on the current power consumption and future planning of the household. That’s why, we provide customised options of Solar PV Systems from On-grid Solar PV Systems to Full Battery Back Up Systems to everyone based on their individual needs",
+    // feature_list_1: [
+    //   "Best Insurance Agency",
+    //   "Trusted & Experience",
+    //   "Key Managerial Persons",
+    // ],
+    // feature_list_2: [
+    //   "Dedicated Support",
+    //   "Board Composition",
+    //   "Board Committees",
+    // ],
+    feature_list_1: [],
+    feature_list_2: [],
   },
   {
     tab_id: "profile",
     tab_name: "Mission",
-    sm_info: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaquecy epsa abillo inventore veritatis architecto beatae",
-    feature_list_1: [
-      "Key Managerial Persons",
-      "Best Insurance Agency",
-      "Trusted & Experience",
-    ],
-    feature_list_2: [
-      "Board Composition",
-      "Board Committees",
-      "Dedicated Support",
-    ]
+    sm_info: "Our main goal is to make solar more cost-effective by offering premium products at an affordable cost, So, more and more Australians can harness solar energy and become a part of a greener society",
+    // feature_list_1: [
+    //   "Key Managerial Persons",
+    //   "Best Insurance Agency",
+    //   "Trusted & Experience",
+    // ],
+    // feature_list_2: [
+    //   "Board Composition",
+    //   "Board Committees",
+    //   "Dedicated Support",
+    // ],
+    feature_list_1: [],
+    feature_list_2: [],
   },
   {
     tab_id: "contact",
-    tab_name: "Vision",
-    sm_info: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaquecy epsa abillo inventore veritatis architecto beatae",
+    tab_name: "Products",
+    sm_info: "We Use",
     feature_list_1: [
-      "Trusted & Experience",
-      "Best Insurance Agency",
-      "Key Managerial Persons",
+      "Inverter",
+      "Solar PV Panel",
     ],
     feature_list_2: [
-      "Board Committees",
-      "Board Composition",
-      "Dedicated Support",
+      "Mountings",
+      "Battery",
     ]
   },
 ]
@@ -103,11 +105,10 @@ const AboutAreaHomeOne = (style: any) => {
             <div className="col-lg-6 col-md-12">
               <div className="about-section-title">
                 <div className="about-section-sub-title wow slideInUp">
-                  <h4>Our Introductton</h4>
+                  <h4>Overview</h4>
                 </div>
                 <div className="about-section-main-title wow slideInRight">
-                  <h2>We're Developing Future
-                    Solar Solutions </h2>
+                  <h2>About SOLPOWER AUSTRALIA Company</h2>
                 </div>
               </div>
               {/* <!-- tab --> */}
@@ -131,10 +132,13 @@ const AboutAreaHomeOne = (style: any) => {
                 </ul>
                 <div className="tab-content" id="pills-tabContent">
                   {tab_data.map((item, index) =>
-                    <div key={index} className={`tab-pane fade ${index === 0 ? "show active" : ""}`} 
-                    id={`pills-${item.tab_id}`} 
-                    role="tabpanel" 
-                    aria-labelledby={`pills-${item.tab_id}-tab`}>
+                    <div
+                      key={index}
+                      className={`tab-pane fade ${index === currentTab ? "show active" : ""}`}
+                      id={`pills-${item.tab_id}`}
+                      role="tabpanel"
+                      aria-labelledby={`pills-${item.tab_id}-tab`}
+                    >
                       <div className="tabs_item">
                         <div className="tabs-items-content">
                           <div className="about-content-discription wow slideInLeft">
@@ -144,8 +148,8 @@ const AboutAreaHomeOne = (style: any) => {
                             <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                               <div className="about-list wow slideInLeft">
                                 <ul>
-                                  {item.feature_list_1.map((item, i) =>
-                                    <li key={i}> <i className="bi bi-chevron-double-right"></i> {item}</li>
+                                  {item.feature_list_1.map((feature, i) =>
+                                    <li key={i}> <i className="bi bi-chevron-double-right"></i> {feature}</li>
                                   )}
                                 </ul>
                               </div>
@@ -153,14 +157,14 @@ const AboutAreaHomeOne = (style: any) => {
                             <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                               <div className="about-list wow slideInRight">
                                 <ul>
-                                  {item.feature_list_2.map((item, i) =>
-                                    <li key={i}><i className="bi bi-chevron-double-right"></i> {item}</li>
+                                  {item.feature_list_2.map((feature, i) =>
+                                    <li key={i}><i className="bi bi-chevron-double-right"></i> {feature}</li>
                                   )}
                                 </ul>
                               </div>
                             </div>
                             <div className="solar-btn about wow slideInDown">
-                              <a href="#">Our Service <i className="bi bi-arrow-right"></i></a>
+                              <a href="/about">About Us <i className="bi bi-arrow-right"></i></a>
                             </div>
                           </div>
                         </div>
