@@ -44,6 +44,12 @@ const menu_data: DataType[] = [
 	},
 	{
 		id: 4,
+		title: "Products",
+		link: "/products",
+		has_dropdown: false,
+	},
+	{
+		id: 5,
 		title: "Projects",
 		link: "#",
 		has_dropdown: true,
@@ -54,7 +60,7 @@ const menu_data: DataType[] = [
 	},
 
 	{
-		id: 5,
+		id: 6,
 		title: "Pages",
 		link: "#",
 		has_dropdown: true,
@@ -68,7 +74,7 @@ const menu_data: DataType[] = [
 		],
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "Contact",
 		link: "/contact",
 		has_dropdown: false,
