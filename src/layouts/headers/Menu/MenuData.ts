@@ -34,11 +34,12 @@ const menu_data: DataType[] = [
 	{
 		id: 3,
 		title: "Service",
-		link: "#",
+		link: "/service",
 		has_dropdown: true,
 		sub_menus: [
-			{ link: "/service", title: "Services" },
-			{ link: "/service-details", title: "Services Details" },
+			{ link: "/service-details/residential-solar-pv-system", title: "Residential Solar PV System" },
+			{ link: "/service-details/commercial-solar-pv-system", title: "Commercial Solar PV System" },
+			{ link: "/service-details/hybrid-battery-backup-solar-pv-system", title: "Hybrid Battery Backup Solar PV System" },
 		],
 	},
 	{

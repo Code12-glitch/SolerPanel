@@ -4845,3 +4845,15 @@ ul {
 .bi-check2-circle::before {
     color: #e63a27;
 }
+
+.service-details-contact-form {
+    padding: 0 21px 31px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #19142d;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+
+.service-details-contact-form .service-details-title h4 {
+    color: white;
+}
