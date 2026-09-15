@@ -1,11 +1,9 @@
-
 import React from 'react';
 import Image from 'next/image';
 
-import project_details_img_1 from "@/assets/images/resource/project-details1.jpg";
-import project_details_img_2 from "@/assets/images/resource/service3.png";
+import project_details_img_1 from '@/assets/images/resource/project-details1.jpg';
+import project_details_img_2 from '@/assets/images/resource/service3.png';
 import { TeamSocialLinks } from '../common/SocialLinks';
-
 
 interface DataType {
   title_1: string;
@@ -15,102 +13,136 @@ interface DataType {
   feature: string[];
 }
 
-
 const project_content: DataType = {
-  title_1: "Description of Situation",
-  sm_des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nul pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus e voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae",
-  title_2: "client's goal",
-  sm_info: "The result of employees, over 115 detailers and engineers, all coming together to solve probl before they arise. the teamwork it demonstrates both internally and externally is outstandingThe result of employees, over 115 detailers and engineers, all coming together to solve problem before they",
+  title_1: 'Grid-Connected Solar Systems',
+
+  sm_des:
+    'Grid-connected solar systems allow your home or business to generate clean electricity from solar panels while remaining connected to the electricity grid. Solar power is used when it is available, and any excess electricity can be exported back to the grid. This provides a practical way to reduce electricity costs while making greater use of renewable energy.',
+
+  title_2: 'How Grid-Connected Solar Works',
+
+  sm_info:
+    'A grid-connected solar system uses solar panels and an inverter to convert sunlight into usable electricity for your property. During the day, the solar energy generated can be used to power appliances and equipment. When your system produces more electricity than you need, the surplus can be sent to the electricity grid.',
+
   feature: [
-    "The triple pressures of more regulations outstanding in the creation.",
-    "The legacy of the financial crisis has meant a few tricky years",
-    "Now, the triple pressures of more regulations more regulations",
-    "Outstanding in the creation he triple pressures of more regulations",
-    "The triple pressures of more regulations outstanding in the creation",
-  ]
-}
+    'Generate clean electricity from sunlight.',
+    'Use solar energy directly within your home or business.',
+    'Export excess solar electricity to the electricity grid.',
+    'Reduce your reliance on electricity purchased from the grid.',
+    'Monitor your system performance and solar energy production.',
+  ],
+};
 
-const { title_1, sm_des, title_2, sm_info, feature } = project_content
+const { title_1, sm_des, title_2, sm_info, feature } = project_content;
 
-
-const ProjectDetailsArea = () => {
+const GridConnectedSystemsArea = () => {
   return (
-    <>
-      <div className="project-details-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-md-6">
-              <div className="projetct-details-image">
-                <Image src={project_details_img_1} style={{ height: "auto" }} alt="Service" />
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6">
-              <div className="info-area">
-                <div className="sub-title">
-                  <h5>information</h5>
-                </div>
-                <ul className="info">
-                  <li>
-                    <h6>project name:</h6>
-                    <p>solar & exterior design</p>
-                  </li>
-                  <li>
-                    <h6>client:</h6>
-                    <p>theme pvt ltd</p>
-                  </li>
-                  <li>
-                    <h6>category:</h6>
-                    <p>commercial</p>
-                  </li>
-                  <li>
-                    <h6>delivery mode:</h6>
-                    <p>in hand delivery</p>
-                  </li>
-                  <li>
-                    <h6>location:</h6>
-                    <p>USA</p>
-                  </li>
+    <section className="project-details-section">
+      <div className="container">
+        <div className="row">
 
-                  <li>
-                    <h6>share:</h6>
-                    <ul className="d-flex social_icon">
-                      <TeamSocialLinks />
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-12">
-              <div className="title">
-                <h4>{title_1}</h4>
-              </div>
-              <p>{sm_des}</p>
-            </div>
-            <div className="col-lg-12 list-part">
-              <div className="row align-items-end">
-                <div className="col-lg-8 col-md-12">
-                  <div className="title">
-                    <h4>{title_2}</h4>
-                  </div>
-                  <p>{sm_info}</p>
-                  <ul className="desc-list">
-                    {feature.map((item, i) => (
-                      <li key={i}><p>{item}</p></li>
-                    ))} 
-                  </ul>
-                </div>
-                <div className="col-lg-4 col-md-12">
-                  <div className="image">
-                    <Image src={project_details_img_2} style={{ height: "auto" }} alt="Service" />
-                  </div>
-                </div>
-              </div>
+          {/* Main Image */}
+          <div className="col-lg-6 col-md-6">
+            <div className="projetct-details-image">
+              <Image
+                src={project_details_img_1}
+                style={{ height: 'auto' }}
+                alt="Grid-connected solar system"
+              />
             </div>
           </div>
+
+          {/* Information */}
+          <div className="col-lg-6 col-md-6">
+            <div className="info-area">
+              <div className="sub-title">
+                <h5>Information</h5>
+              </div>
+
+              <ul className="info">
+                <li>
+                  <h6>System:</h6>
+                  <p>Grid-Connected Solar</p>
+                </li>
+
+                <li>
+                  <h6>Application:</h6>
+                  <p>Residential & Commercial</p>
+                </li>
+
+                <li>
+                  <h6>Energy Source:</h6>
+                  <p>Solar Energy</p>
+                </li>
+
+                <li>
+                  <h6>Connection:</h6>
+                  <p>Electricity Grid</p>
+                </li>
+
+                <li>
+                  <h6>Benefits:</h6>
+                  <p>Clean Energy & Reduced Electricity Costs</p>
+                </li>
+
+                <li>
+                  <h6>Share:</h6>
+
+                  <ul className="d-flex social_icon">
+                    <TeamSocialLinks />
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Description */}
+          <div className="col-lg-12">
+            <div className="title">
+              <h4>{title_1}</h4>
+            </div>
+
+            <p>{sm_des}</p>
+          </div>
+
+          {/* How It Works */}
+          <div className="col-lg-12 list-part">
+            <div className="row align-items-end">
+
+              <div className="col-lg-8 col-md-12">
+                <div className="title">
+                  <h4>{title_2}</h4>
+                </div>
+
+                <p>{sm_info}</p>
+
+                <ul className="desc-list">
+                  {feature.map((item, i) => (
+                    <li key={i}>
+                      <p>{item}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Secondary Image */}
+              <div className="col-lg-4 col-md-12">
+                <div className="image">
+                  <Image
+                    src={project_details_img_2}
+                    style={{ height: 'auto' }}
+                    alt="Solar energy system"
+                  />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
-export default ProjectDetailsArea;
+export default GridConnectedSystemsArea;

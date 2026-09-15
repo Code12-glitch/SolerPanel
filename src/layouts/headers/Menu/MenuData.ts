@@ -54,16 +54,24 @@ const menu_data: DataType[] = [
 	},
 	{
 		id: 5,
+		title: "Battery",
+		link: "/battery",
+		has_dropdown: false,
+	},
+	{
+		id: 6,
 		title: "Projects",
 		link: "#",
 		has_dropdown: true,
 		sub_menus: [
 			{ link: "/project-grid", title: "Project Grid" },
 			{ link: "/project-details", title: "Project Details" },
+			{ link: "/grid-connected-systems", title: "Grid Connected Systems" },
+			{ link: "/battery-systems", title: "Battery Systems" },
 		],
 	},
 
-	{
+	/* {
 		id: 6,
 		title: "Pages",
 		link: "#",
@@ -76,7 +84,7 @@ const menu_data: DataType[] = [
 			{ link: "/faq", title: "FAQ" },
 			{ link: "/erorr", title: "Erorr" },
 		],
-	},
+	}, */
 	{
 		id: 7,
 		title: "Blog",
