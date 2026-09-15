@@ -19,7 +19,7 @@ interface DataType {
 const contact_content: DataType = {
   subtitle: "Contact Wlth Us",
   title: "Get In Touch!",
-  sm_info: "Get in Touch! Contact with us Get in Touch! Contact with us",
+  sm_info: "Have questions about solar solutions or need more information? Our experienced team is here to provide the right guidance and help you find the best solution for your energy needs.",
   contact_data: [
     {
       id: 1,
