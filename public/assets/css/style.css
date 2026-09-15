@@ -3510,7 +3510,7 @@ blockquote {
 .contact-icon i {
     height: 60px;
     width: 60px;
-    background: #292930;
+    background: #19142d;
     display: inline-block;
     line-height: 60px;
     text-align: center;
@@ -3543,6 +3543,10 @@ blockquote {
     font-size: 24px;
     color: #0d1c37;
     font-weight: 500;
+}
+
+.contact-adress {
+    overflow: hidden;
 }
 
 .contact-adress span {
@@ -4856,4 +4860,12 @@ ul {
 
 .service-details-contact-form .service-details-title h4 {
     color: white;
+}
+
+form#it-form {
+    padding: 20px 21px 31px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #e63a27;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }

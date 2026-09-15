@@ -13,6 +13,7 @@ interface DataType {
     icon: string;
     title: string;
     info: string;
+    info_2?: string;
   }[];
 }
 
@@ -21,29 +22,58 @@ const contact_content: DataType = {
   title: "Get In Touch!",
   sm_info: "Have questions about solar solutions or need more information? Our experienced team is here to provide the right guidance and help you find the best solution for your energy needs.",
   contact_data: [
+    
+    {
+      id: 0,
+      icon: "bi bi-phone-flip",
+      title: "Have a Questions? Call Us",
+      info: "1800 979 707",
+    },
     {
       id: 1,
       icon: "bi bi-geo-alt-fill",
-      title: "Address",
-      info: "7515 Carriage Court, Coachella,",
+      title: "Visit Our Company at",
+      info: "Office Address: WOTSO, 2/194, Varsity Parade, Varsity Lakes, QLD, 4227",
+      info_2: "Postal Address: P O Box 3098, Browns Plains, QLD, 4118",
     },
     {
       id: 2,
       icon: "bi bi-phone-flip",
       title: "Call Us Today",
-      info: "+1 (305) 1234-5678",
+      info: "1800 979 707",
     },
     {
       id: 3,
       icon: "bi bi-envelope",
       title: "Email Us",
-      info: "example@gmail.com",
+      info: "info@solpoweraustralia.com.au",
+    },
+    {
+      id: 4,
+      icon: "bi bi-clock",
+      title: "Working Hours",
+      info: "Mon – Fri: 09.00AM to 05.00PM",
+      info_2: "Saturday & Sunday: Closed",
     }
 
   ]
 }
 
 const { subtitle, title, sm_info, contact_data } = contact_content
+
+const renderContactInfo = (info: string) => {
+  const parts = info.split(":");
+
+  if (parts.length > 1) {
+    return (
+      <>
+        <strong>{parts[0]}:</strong> {parts.slice(1).join(":")}
+      </>
+    );
+  }
+
+  return info;
+};
 
 const ContactArea = () => {
   return (
@@ -71,7 +101,8 @@ const ContactArea = () => {
                   </div>
                   <div className="contact-adress">
                     <h5>{item.title}</h5>
-                    <span>{item.info}</span>
+                    <div>{renderContactInfo(item.info)}</div>
+                    {item.info_2 && <div>{renderContactInfo(item.info_2)}</div>}
                   </div>
                 </div>
               ))}
