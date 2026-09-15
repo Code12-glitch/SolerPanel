@@ -18,7 +18,7 @@ const contact_area_content = {
     "Comprehensive support: We handle everything from system design and permitting to installation and maintenance, ensuring a hassle-free experience from start to finish.",
   ],
   btn_text: "Get A Quote",
-  phone: <>Emergency Call <span>+123956(6565)556-02</span></>,
+  phone: <>Call Us <span>1800 979 707</span></>,
 
 }
 

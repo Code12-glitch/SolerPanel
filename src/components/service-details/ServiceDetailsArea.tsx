@@ -43,7 +43,7 @@ const service_details_content: DataType = {
 }
 
 const ServiceDetailsArea = ({ service }: { service?: any }) => {
-  const detail = service || service_details_content;
+  const detail = service?.details || service_details_content;
   const { title, sm_des_1, sm_des_2, title_2, categories, help_title, help_info, phone, email } = detail;
   return (
     <>
@@ -107,8 +107,8 @@ const ServiceDetailsArea = ({ service }: { service?: any }) => {
                   <p>{help_info}</p>
                   <div className="widget-info-social-link">
                     <ul>
-                      <li><a href="tel:(555)123-4567"><i className="bi bi-telephone"></i> <span>{phone}</span></a></li>
-                      <li><a href="mailto:support@sertom.com"><i className="bi bi-envelope"></i> <span>{email}</span></a></li>
+                      <li><a href="tel:1800 979 707"><i className="bi bi-telephone"></i> <span>{phone}</span></a></li>
+                      <li><a href="mailto:info@solpoweraustralia.com.au"><i className="bi bi-envelope"></i> <span>{email}</span></a></li>
                     </ul>
                   </div>
                 </div>
