@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
 import product_panel from '@/assets/images/resource/service1.png';
 
 export default function PanelsPage() {
@@ -7,16 +9,25 @@ export default function PanelsPage() {
       <section className="product-details-area">
         <div className="container">
           <div className="row align-items-center">
+
+            {/* Product Image */}
             <div className="col-lg-6">
-              <Image
-                src={product_panel}
-                alt="Solar Panels"
-                className="img-fluid"
-              />
+              <div className="product-details-image">
+                <Image
+                  src={product_panel}
+                  alt="Solar Panels"
+                  width={800}
+                  height={600}
+                  priority
+                  className="img-fluid"
+                />
+              </div>
             </div>
 
+            {/* Product Content */}
             <div className="col-lg-6">
               <div className="product-details-content">
+
                 <span>Solar Products</span>
 
                 <h1>Solar Panels</h1>
@@ -32,11 +43,23 @@ export default function PanelsPage() {
                   performance, durability and long-term energy savings.
                 </p>
 
-                <a href="/contact" className="btn">
+                <h3>Why Choose Our Solar Panels?</h3>
+
+                <ul>
+                  <li>High-quality solar panel technology</li>
+                  <li>Excellent energy efficiency</li>
+                  <li>Reliable long-term performance</li>
+                  <li>Suitable for Australian homes and businesses</li>
+                  <li>Designed to help reduce electricity costs</li>
+                </ul>
+
+                <Link href="/contact" className="btn">
                   Get a Quote
-                </a>
+                </Link>
+
               </div>
             </div>
+
           </div>
         </div>
       </section>
