@@ -3,14 +3,22 @@
 import accordion_data from '@/data/AccordionData';
 import React from 'react';
 
-const Accordion = () => {
+interface FaqItem {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+const Accordion = ({ data }: { data?: FaqItem[] }) => {
+  const faqItems = data && data.length > 0 ? data : accordion_data;
+
   return (
     <>
       {/* <!-- Start Accordion --> */}
       <div className="tab_container pb-3">
         <div id="tab1" className="tab_content">
           <div className="accordion" id="accordionExample">
-            {accordion_data.map((item, i) =>
+            {faqItems.map((item, i) =>
               <div key={i} className="accordion-item wow animate__fadeInDown">
                 <h2 className="accordion-header" id={`heading${item.id} active`}>
                   <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${item.id}`} aria-expanded={`${i === 0 ? "true" : "false"}`} aria-controls={`collapse${item.id}`}>
