@@ -1,6 +1,6 @@
 
 
-import ProjectDetails from '@/components/project-details';
+import ProjectDetails from '@/components/Grid-Connected Systems';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 

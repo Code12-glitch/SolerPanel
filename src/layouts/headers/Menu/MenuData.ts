@@ -79,6 +79,12 @@ const menu_data: DataType[] = [
 	},
 	{
 		id: 7,
+		title: "Blog",
+		link: "/blog",
+		has_dropdown: false,
+	},
+	{
+		id: 8,
 		title: "Contact",
 		link: "/contact",
 		has_dropdown: false,
