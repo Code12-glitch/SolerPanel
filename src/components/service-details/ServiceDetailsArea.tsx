@@ -8,12 +8,27 @@ import service_details_thumb_1 from '@/assets/images/resource/service-details.pn
 import service_details_thumb_2 from '@/assets/images/resource/service-details2.png';
 import service_details_thumb_3 from '@/assets/images/resource/service-details3.png';
 
+interface CategoryLink {
+  title: string;
+  slug: string;
+}
+
 interface DataType {
   title: string;
   sm_des_1: string;
   sm_des_2: string;
   title_2: string;
-  categories: string[];
+  sm_des_3?: string;
+  feature_list?: string[];
+  title_3?: string;
+  sm_des_4?: string;
+  feature_list_2?: string[];
+  sm_des_5?: string;
+  title_4?: string;
+  sm_des_6?: string;
+  feature_list_3?: string[];
+  sm_des_7?: string;
+  categories: CategoryLink[];
   help_title: string;
   help_info: string;
   phone: string;
@@ -28,13 +43,9 @@ const service_details_content: DataType = {
   title_2: "This service overview Everyone",
 
   categories: [
-    "Commercial Building ",
-    "Installation ",
-    "Renewable Energy ",
-    "Solar Energy ",
-    "Wind Generators ",
-    "Financial Investment ",
-    "Solar Panels ",
+    { title: "Residential Solar PV System", slug: "residential-solar-pv-system" },
+    { title: "Commercial Solar PV System", slug: "commercial-solar-pv-system" },
+    { title: "Hybrid Battery Backup Solar PV System", slug: "hybrid-battery-backup-solar-pv-system" },
   ],
   help_title: "Need Help?",
   help_info: "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
@@ -44,7 +55,22 @@ const service_details_content: DataType = {
 
 const ServiceDetailsArea = ({ service }: { service?: any }) => {
   const detail = service?.details || service_details_content;
-  const { title, sm_des_1, sm_des_2, title_2, categories, help_title, help_info, phone, email } = detail;
+  const { title, sm_des_1, sm_des_2, title_2, sm_des_3, feature_list, title_3, sm_des_4, feature_list_2, sm_des_5, title_4, sm_des_6, feature_list_3, sm_des_7, categories, help_title, help_info, phone, email } = detail;
+
+  const renderFeatureItem = (item: string) => {
+    const parts = item.split(":");
+
+    if (parts.length > 1) {
+      return (
+        <>
+          <strong>{parts[0]}:</strong> {parts.slice(1).join(":")}
+        </>
+      );
+    }
+
+    return <>{item}</>;
+  };
+
   return (
     <>
       <div className="service-details-section">
@@ -76,9 +102,80 @@ const ServiceDetailsArea = ({ service }: { service?: any }) => {
               <div className="service-details-title">
                 <h4>{title_2}</h4>
               </div>
-              <div className="service-details-discription">
-                <p>{sm_des_1}</p>
-              </div>
+              {sm_des_3 ? (
+                <>
+                  <div className="service-details-discription">
+                    <p>{sm_des_3}</p>
+                  </div>
+                  {feature_list && feature_list.length > 0 && (
+                    <div className="blog-details-list">
+                      <ul>
+                        {feature_list.map((item: string, i: number) => (
+                          <li key={i}><i className="bi bi-check2-circle"></i> {renderFeatureItem(item)}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <div className="service-details-discription">
+                  <p>{sm_des_1}</p>
+                </div>
+              )}
+
+              {title_3 && (
+                <>
+                  <div className="service-details-title">
+                    <h4>{title_3}</h4>
+                  </div>
+                  {sm_des_4 && (
+                    <div className="service-details-discription">
+                      <p>{sm_des_4}</p>
+                    </div>
+                  )}
+                  {feature_list_2 && feature_list_2.length > 0 && (
+                    <div className="blog-details-list">
+                      <ul>
+                        {feature_list_2.map((item: string, i: number) => (
+                          <li key={i}><i className="bi bi-check2-circle"></i> {renderFeatureItem(item)}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {sm_des_5 && (
+                    <div className="service-details-discription">
+                      <p>{sm_des_5}</p>
+                    </div>
+                  )}
+                </>
+              )}
+
+              {title_4 && (
+                <>
+                  <div className="service-details-title">
+                    <h4>{title_4}</h4>
+                  </div>
+                  {sm_des_6 && (
+                    <div className="service-details-discription">
+                      <p>{sm_des_6}</p>
+                    </div>
+                  )}
+                  {feature_list_3 && feature_list_3.length > 0 && (
+                    <div className="blog-details-list">
+                      <ul>
+                        {feature_list_3.map((item: string, i: number) => (
+                          <li key={i}><i className="bi bi-check2-circle"></i> {renderFeatureItem(item)}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {sm_des_7 && (
+                    <div className="service-details-discription">
+                      <p>{sm_des_7}</p>
+                    </div>
+                  )}
+                </>
+              )}
               <Accordion />
             </div>
             <div className="col-lg-4 col-md-6">
@@ -95,8 +192,8 @@ const ServiceDetailsArea = ({ service }: { service?: any }) => {
                 {/* <!-- widget categories menu --> */}
                 <div className="widget-categories-menu asd">
                   <ul>
-                    {categories.map((item: string, i: number) => (
-                      <li key={i}><Link href="/service-details" style={{ color: "#000" }}>{item}<span><i className="bi bi-arrow-right"></i></span></Link></li>
+                    {categories.map((item: CategoryLink, i: number) => (
+                      <li key={i}><Link href={`/service-details/${item.slug}`} style={{ color: "#000" }}>{item.title}<span><i className="bi bi-arrow-right"></i></span></Link></li>
                     ))}
                   </ul>
                 </div>

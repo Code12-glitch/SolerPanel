@@ -8,11 +8,13 @@ import SubscribeAreaHomeOne from '../homes/home/SubscribeAreaHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne';
 
 const ServiceDetails = ({ service }: { service?: any }) => {
+  const pageTitle = service ? service.title : 'Service Details';
+
   return (
     <>
       <HeaderOne />
       <main>
-        <Breadcrumb top_title='Service Details' title={service ? service.title : 'Service Details'} />
+        <Breadcrumb top_title={pageTitle} title={pageTitle} />
         <ServiceDetailsArea service={service} />
         <ServiceAreaHomeOne style_2={true} />
         <SubscribeAreaHomeOne />
