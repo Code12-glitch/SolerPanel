@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 
 const perView = 100;
 
-const ProjectGridArea = () => {
+const GridArea = () => {
   const [next, setNext] = useState(perView);
 
   const handleLoadMore = () => {
@@ -149,4 +149,4 @@ const ProjectGridArea = () => {
   );
 };
 
-export default ProjectGridArea;
+export default GridArea;

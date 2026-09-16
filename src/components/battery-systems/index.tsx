@@ -1,22 +1,22 @@
 import React from "react";
 import HeaderOne from "@/layouts/headers/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/breadcrumb";
-import ProjectGridArea from "./ProjectGridArea";
+import BatterySystemsArea from "./BatterySystemsArea";
 import SubscribeAreaHomeOne from "../homes/home/SubscribeAreaHomeOne";
 import FooterOne from "@/layouts/footers/FooterOne";
 
-const ProjectGrid = () => {
+const BatterySystems = () => {
   return (
     <>
       <HeaderOne />
 
       <main>
         <Breadcrumb
-          top_title="Grid Connected Systems"
-          title="Grid Connected Systems"
+          top_title="Battery Systems"
+          title="Battery Systems"
         />
 
-        <ProjectGridArea />
+        <BatterySystemsArea />
 
         <SubscribeAreaHomeOne />
       </main>
@@ -26,4 +26,4 @@ const ProjectGrid = () => {
   );
 };
 
-export default ProjectGrid;
+export default BatterySystems;
