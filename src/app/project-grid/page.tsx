@@ -1,21 +1,15 @@
-
-import ProjectGrid from '@/components/project-grid';
+import ProjectGridArea from '@/components/project-grid/ProjectGridArea';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
-export const metadata = {
-  title: 'Project Grid - SolerPanel-Solar & Renewable Energy React Next js Template',
-  description: 'The Solar Panel React Next js template is a modern and responsive design specifically created for websites related to solar energy and renewable energy solutions',
-}
-
-
-
-const index = () => {
+const ProjectGridPage = () => {
   return (
     <Wrapper>
-      <ProjectGrid />
+      <main>
+        <ProjectGridArea />
+      </main>
     </Wrapper>
   );
 };
 
-export default index;
+export default ProjectGridPage;

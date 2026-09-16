@@ -2,18 +2,14 @@ import ProjectDetails from '@/components/project-details';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
-const ProjectDetails = () => {
+const ProjectDetailsPage = () => {
   return (
     <Wrapper>
       <main>
-        <section className="project-details-area">
-          <div className="container">
-            <h1>Project Details</h1>
-          </div>
-        </section>
+        <ProjectDetails />
       </main>
     </Wrapper>
   );
 };
 
-export default ProjectDetails;
+export default ProjectDetailsPage;
