@@ -17,14 +17,14 @@ const product_data: ProductData[] = [
     category: 'Panels',
     image: product_panel,
     title: 'Panels',
-    link: '/product-details/panels',
+    link: '/panels',
   },
   {
     id: 2,
     category: 'Inverters',
     image: product_inverter,
     title: 'Inverters',
-    link: '/product-details/inverters',
+    link: '/inverters',
   },
 ];
 

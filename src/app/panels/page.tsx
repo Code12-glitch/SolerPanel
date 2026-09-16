@@ -1,18 +1,18 @@
-import Battery from "@/components/battery";
-import Wrapper from "@/layouts/Wrapper";
 import React from "react";
 
+import Wrapper from "@/layouts/Wrapper";
+import Panels from "@/components/panels";
+
 export const metadata = {
-  title:
-    "Battery",
+  title: "Solar Panels - SolerPanel",
 };
 
-const BatteryPage = () => {
+const PanelsPage = () => {
   return (
     <Wrapper>
-      <Battery />
+      <Panels />
     </Wrapper>
   );
 };
 
-export default BatteryPage;
+export default PanelsPage;
