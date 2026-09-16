@@ -2,20 +2,20 @@
 import React from 'react';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
-import BatterySystemsArea from './BatterySystemsArea';
+import ProjectDetailsArea from './ProjectDetailsArea';
 import FooterOne from '@/layouts/footers/FooterOne';
 
-const BatterySystems = () => {
+const ProjectDetails = () => {
   return (
     <>
       <HeaderOne />
       <main>
-        <Breadcrumb top_title='Battery Systems' title='Battery Systems' />
-        <BatterySystemsArea />
+        <Breadcrumb top_title='Project Details' title='Project Details' />
+        <ProjectDetailsArea />
       </main>
       <FooterOne />
     </>
   );
 };
 
-export default BatterySystems;
+export default ProjectDetails;
