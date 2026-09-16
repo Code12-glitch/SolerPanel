@@ -20,6 +20,17 @@ import project_img_19 from "@/assets/images/flagstone/1.webp";
 import project_img_20 from "@/assets/images/flagstone/2.webp";
 import project_img_21 from "@/assets/images/flagstone1/1.webp";
 import project_img_22 from "@/assets/images/flagstone1/2.webp";
+import project_img_23 from "@/assets/images/greenbank/1.webp";
+import project_img_24 from "@/assets/images/greenbank/2.webp";
+import project_img_25 from "@/assets/images/inala/1.webp";
+import project_img_26 from "@/assets/images/inala/2.webp";
+import project_img_27 from "@/assets/images/inala/3.webp";
+import project_img_28 from "@/assets/images/inala/4.webp";
+import project_img_29 from "@/assets/images/karalee/1.webp";
+import project_img_30 from "@/assets/images/karalee/2.webp";
+import project_img_31 from "@/assets/images/karalee/3.webp";
+import project_img_32 from "@/assets/images/karalee/4.webp";
+
 
 import { StaticImageData } from "next/image";
 
@@ -104,6 +115,42 @@ const project_data: DataType[] = [
     name: "13.2kW System in Flagstone with Sungrow Hybrid Inverter",
     title: "13.2kW System in Flagstone with Sungrow Hybrid Inverter",
   },
+  
+  
+  {
+    id: 8,
+    images: [
+      project_img_23,
+      project_img_24,
+    ],
+    name: "6.6kW System Installed in Greenbank",
+    title: "6.6kW System Installed in Greenbank",
+  },
+  {
+    id: 9,
+    images: [
+      project_img_25,
+      project_img_26,
+	  project_img_27,
+	  project_img_28,
+    ],
+    name: "9.68kW System Installed in Inala",
+    title: "9.68kW System Installed in Inala",
+  },
+  {
+    id: 10,
+    images: [
+      project_img_29,
+      project_img_30,
+	  project_img_31,
+	  project_img_32,
+    ],
+    name: "11.88kW System Installed in Karalee",
+    title: "11.88kW System Installed in Karalee",
+  },
+
+
+  
   
 ];
 
