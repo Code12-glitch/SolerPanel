@@ -4902,24 +4902,16 @@ form#it-form {
   object-fit: cover;
 }
 
-/* Project content */
-
 .project-content {
   padding: 20px 0;
 }
 
 .project-content h4 {
-  margin: 0 0 8px;
+  margin: 0;
   font-size: 20px;
 }
 
-.project-content span {
-  display: block;
-  font-size: 14px;
-}
-
 /* Tablet */
-
 @media (max-width: 991px) {
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4927,7 +4919,6 @@ form#it-form {
 }
 
 /* Mobile */
-
 @media (max-width: 575px) {
   .project-grid {
     grid-template-columns: 1fr;

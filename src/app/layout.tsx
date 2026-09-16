@@ -44,7 +44,7 @@ export default function RootLayout({
         {/* jQuery MUST load first */}
         <Script
           id="jquery"
-          src="/assets/js/jquery.min.js"
+          src="/assets/js/jquery-3.6.0.min.js"
           strategy="beforeInteractive"
         />
 

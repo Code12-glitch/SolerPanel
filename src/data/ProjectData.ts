@@ -1,9 +1,23 @@
-import project_img_1 from "@/assets/images/project/project1.png";
-import project_img_2 from "@/assets/images/project/project2.png";
-import project_img_3 from "@/assets/images/project/project3.png";
-import project_img_4 from "@/assets/images/project/project4.png";
-import project_img_5 from "@/assets/images/project/project5.png";
-import project_img_6 from "@/assets/images/project/project6.png";
+import project_img_1 from "@/assets/images/blackbuttsouth/1.jpg";
+import project_img_2 from "@/assets/images/blackbuttsouth/2.jpg";
+import project_img_3 from "@/assets/images/blackbuttsouth/3.jpg";
+import project_img_4 from "@/assets/images/boondall/1.webp";
+import project_img_5 from "@/assets/images/boondall/2.webp";
+import project_img_6 from "@/assets/images/boondall/3.webp";
+import project_img_7 from "@/assets/images/carina/1.webp";
+import project_img_8 from "@/assets/images/carina/2.webp";
+import project_img_9 from "@/assets/images/carina/3.webp";
+import project_img_10 from "@/assets/images/daisyhill/1.webp";
+import project_img_11 from "@/assets/images/daisyhill/2.webp";
+import project_img_12 from "@/assets/images/daisyhill/3.webp";
+import project_img_13 from "@/assets/images/deceptionbay/1.webp";
+import project_img_14 from "@/assets/images/deceptionbay/2.webp";
+import project_img_15 from "@/assets/images/deceptionbay/3.webp";
+import project_img_16 from "@/assets/images/deceptionbay/4.webp";
+import project_img_17 from "@/assets/images/deceptionbay/5.webp";
+import project_img_18 from "@/assets/images/deceptionbay/6.webp";
+import project_img_19 from "@/assets/images/flagstone/1.webp";
+import project_img_20 from "@/assets/images/flagstone/2.webp";
 
 import { StaticImageData } from "next/image";
 
@@ -12,153 +26,74 @@ interface DataType {
   images: StaticImageData[];
   name: string;
   title: string;
-  category: string;
 }
 
 const project_data: DataType[] = [
   {
     id: 1,
-    images: [project_img_1, project_img_2, project_img_3],
-    name: "Chain Finance Program",
-    title: "ECO, Supply Chain",
-    category: "Grid-Connected Systems",
+    images: [
+      project_img_2,
+      project_img_1,
+      project_img_3,
+    ],
+    name: "6.6kW System Installed in Blackbutt South",
+    title: "6.6kW System Installed in Blackbutt South",
   },
-
   {
     id: 2,
-    images: [project_img_4, project_img_5],
-    name: "New Public Attitude Tracker",
-    title: "Digital Product",
-    category: "Energy",
+    images: [
+      project_img_4,
+      project_img_5,
+      project_img_6,
+    ],
+    name: "6.6kW System Installed in Boondall",
+    title: "6.6kW System Installed in Boondall",
   },
-
   {
     id: 3,
-    images: [project_img_6],
-    name: "Smarter Ways to Manage",
-    title: "ECO, Supply Chain",
-    category: "Finance",
+    images: [
+      project_img_7,
+      project_img_8,
+      project_img_9,
+    ],
+    name: "6.6kW System Installed in Carina",
+    title: "6.6kW System Installed in Carina",
   },
-
   {
     id: 4,
-    images: [project_img_1, project_img_6, project_img_4],
-    name: "Task Management",
-    title: "Creative Work",
-    category: "Supply Chain",
+    images: [
+      project_img_10,
+      project_img_11,
+      project_img_12,
+    ],
+    name: "6.6kW System Installed in Daisy Hill",
+    title: "6.6kW System Installed in Daisy Hill",
   },
-
   {
     id: 5,
-    images: [project_img_2],
-    name: "Addressing Wind Energy",
-    title: "ECO, Supply Chain",
-    category: "Business",
+    images: [
+      project_img_13,
+      project_img_14,
+      project_img_15,
+      project_img_16,
+      project_img_17,
+      project_img_18,
+    ],
+    name: "13.2kW System Installed in Deception Bay",
+    title: "13.2kW System Installed in Deception Bay",
   },
-
+  
   {
     id: 6,
-    images: [project_img_1, project_img_2, project_img_3],
-    name: "Historical Book Design",
-    title: "Finance, Supply",
-    category: "Energy",
+    images: [
+      project_img_19,
+      project_img_20,
+    ],
+    name: "13.2kW System Installed in Flagstone",
+    title: "13.2kW System Installed in Flagstone",
   },
-
-  {
-    id: 7,
-    images: [project_img_1, project_img_2, project_img_3],
-    name: "Chain Finance Program",
-    title: "ECO, Supply Chain",
-    category: "Business",
-  },
-
-  {
-    id: 8,
-    images: [project_img_5],
-    name: "New Public Attitude Tracker",
-    title: "Digital Product",
-    category: "Supply Chain",
-  },
-
-  {
-    id: 9,
-    images: [project_img_6],
-    name: "Smarter Ways to Manage",
-    title: "ECO, Supply Chain",
-    category: "Finance",
-  },
-
-  {
-    id: 10,
-    images: [project_img_1],
-    name: "Task Management",
-    title: "Creative Work",
-    category: "Supply Chain",
-  },
-
-  {
-    id: 11,
-    images: [project_img_2],
-    name: "Addressing Wind Energy",
-    title: "ECO, Supply Chain",
-    category: "Business",
-  },
-
-  {
-    id: 12,
-    images: [project_img_3],
-    name: "Historical Book Design",
-    title: "Finance, Supply",
-    category: "Energy",
-  },
-
-  {
-    id: 13,
-    images: [project_img_6],
-    name: "Smarter Ways to Manage",
-    title: "ECO, Supply Chain",
-    category: "Supply Chain",
-  },
-
-  {
-    id: 14,
-    images: [project_img_1],
-    name: "Task Management",
-    title: "Creative Work",
-    category: "Energy",
-  },
-
-  {
-    id: 15,
-    images: [project_img_2],
-    name: "Addressing Wind Energy",
-    title: "ECO, Supply Chain",
-    category: "Energy",
-  },
-
-  {
-    id: 16,
-    images: [project_img_3],
-    name: "Historical Book Design",
-    title: "Finance, Supply",
-    category: "Business",
-  },
-
-  {
-    id: 17,
-    images: [project_img_2],
-    name: "New Public Attitude Tracker",
-    title: "Digital Product",
-    category: "Finance",
-  },
-
-  {
-    id: 18,
-    images: [project_img_3],
-    name: "Smarter Ways to Manage",
-    title: "ECO, Supply Chain",
-    category: "Supply Chain",
-  },
+  
+  
 ];
 
 export default project_data;
