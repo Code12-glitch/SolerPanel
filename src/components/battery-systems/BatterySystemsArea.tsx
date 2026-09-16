@@ -4,7 +4,7 @@ import battery_data from "@/data/BatteryData";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-const perView = 100;
+const perView = 200;
 
 const BatterySystemsArea = () => {
   const [next, setNext] = useState(perView);

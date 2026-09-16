@@ -594,7 +594,7 @@ const battery_data: DataType[] = [
       project_img_127,
     ],
     name: "13.3kW Solar PV System with GoodWe ESA 32kWh Battery Pack installed in Heathwood",
-    title: 13.3kW Solar PV System with GoodWe ESA 32kWh Battery Pack installed in Heathwood",
+    title: "13.3kW Solar PV System with GoodWe ESA 32kWh Battery Pack installed in Heathwood",
   },
   {
     id: 42,
