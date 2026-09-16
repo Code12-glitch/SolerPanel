@@ -4,9 +4,9 @@ import grid_data from "@/data/GridData";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-const perView = 100;
+const perView = 6;
 
-const GridArea = () => {
+const GridSystemsArea = () => {
   const [next, setNext] = useState(perView);
 
   const handleLoadMore = () => {
@@ -33,7 +33,6 @@ const GridArea = () => {
         // Prevent duplicate Owl Carousel initialization
         if (carousel.hasClass("owl-loaded")) {
           carousel.trigger("destroy.owl.carousel");
-          carousel.removeClass("owl-loaded");
         }
 
         carousel.owlCarousel({
@@ -55,7 +54,6 @@ const GridArea = () => {
       });
     };
 
-    // Give the DOM time to render
     const timer = setTimeout(initializeCarousel, 100);
 
     return () => {
@@ -85,7 +83,9 @@ const GridArea = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title text-center">
-              <h2>Grid Connected System<br></br></h2>
+              <h2>
+                Grid Connected Systems
+              </h2>
             </div>
           </div>
         </div>
@@ -149,4 +149,4 @@ const GridArea = () => {
   );
 };
 
-export default GridArea;
+export default GridSystemsArea;

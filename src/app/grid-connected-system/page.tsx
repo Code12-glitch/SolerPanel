@@ -1,21 +1,18 @@
-
-import ProjectGrid from '@/components/grid-connected-systems';
-import Wrapper from '@/layouts/Wrapper';
-import React from 'react';
+import GridSystems from "@/components/grid-connected-systems";
+import Wrapper from "@/layouts/Wrapper";
+import React from "react";
 
 export const metadata = {
-  title: 'Grid Connected Systems - SolerPanel-Solar & Renewable Energy React Next js Template',
-  // description: 'The Solar Panel React Next js template is a modern and responsive design specifically created for websites related to solar energy and renewable energy solutions',
-}
+  title:
+    "Grid Connected Systems",
+};
 
-
-
-const ProjectGridPage = () => {
+const GridSystemsPage = () => {
   return (
     <Wrapper>
-      <ProjectGrid />
+      <GridSystems />
     </Wrapper>
   );
 };
 
-export default ProjectGridPage;
+export default GridSystemsPage;

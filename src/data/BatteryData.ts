@@ -101,7 +101,7 @@ interface DataType {
   title: string;
 }
 
-const grid_data: DataType[] = [
+const battery_data: DataType[] = [
   {
     id: 1,
     images: [
@@ -418,4 +418,4 @@ const grid_data: DataType[] = [
   
   
 ];
-export default grid_data;
+export default battery_data;
