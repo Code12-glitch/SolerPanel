@@ -76,6 +76,9 @@ import project_img_75 from "@/assets/images/victoriapoint/1.webp";
 import project_img_76 from "@/assets/images/victoriapoint/2.webp";
 import project_img_77 from "@/assets/images/victoriapoint1/1.webp";
 import project_img_78 from "@/assets/images/victoriapoint1/2.webp";
+import project_img_79 from "@/assets/images/victoriapoint-goodwe/1.webp";
+import project_img_80 from "@/assets/images/victoriapoint-goodwe/2.webp";
+import project_img_81 from "@/assets/images/victoriapoint-goodwe/3.webp";
 
 
 
@@ -352,8 +355,27 @@ const project_data: DataType[] = [
     name: "6.6kW System Installed in Victoria Point",
     title: "6.6kW System Installed in Victoria Point",
   },
+  {
+    id: 25,
+    images: [
+      project_img_77,
+      project_img_78,
+    ],
+    name: "13.2kW System Installed in Victoria Point",
+    title: "13.2kW System Installed in Victoria Point",
+  },
+   {
+    id: 26,
+    images: [
+      project_img_79,
+      project_img_80,
+	  project_img_81,
+    ],
+    name: "13.2kW System Installed in Victoria Point (GoodWe)",
+    title: "13.2kW System Installed in Victoria Point (GoodWe)",
+  },
 
-  
+
 
   
   
