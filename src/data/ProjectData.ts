@@ -18,6 +18,8 @@ import project_img_17 from "@/assets/images/deceptionbay/5.webp";
 import project_img_18 from "@/assets/images/deceptionbay/6.webp";
 import project_img_19 from "@/assets/images/flagstone/1.webp";
 import project_img_20 from "@/assets/images/flagstone/2.webp";
+import project_img_21 from "@/assets/images/flagstone1/1.webp";
+import project_img_22 from "@/assets/images/flagstone1/2.webp";
 
 import { StaticImageData } from "next/image";
 
@@ -93,6 +95,15 @@ const project_data: DataType[] = [
     title: "13.2kW System Installed in Flagstone",
   },
   
+  {
+    id: 7,
+    images: [
+      project_img_21,
+      project_img_22,
+    ],
+    name: "13.2kW System in Flagstone with Sungrow Hybrid Inverter",
+    title: "13.2kW System in Flagstone with Sungrow Hybrid Inverter",
+  },
   
 ];
 
