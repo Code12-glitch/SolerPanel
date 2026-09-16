@@ -144,7 +144,7 @@ import project_img_143 from "@/assets/images/waterford/2.webp";
 import project_img_144 from "@/assets/images/waterford/3.webp";
 import project_img_145 from "@/assets/images/zillmere/1.webp";
 import project_img_146 from "@/assets/images/collingwoodpark/1.webp";
-import project_img_146 from "@/assets/images/collingwoodpark/2.webp";
+import project_img_147 from "@/assets/images/collingwoodpark/2.webp";
 
 
 import { StaticImageData } from "next/image";
@@ -653,7 +653,7 @@ const battery_data: DataType[] = [
     id: 47,
     images: [
       project_img_146,
-      project_img_144,
+      project_img_147,
     ],
     name: "Goodwe ESA 49.9kWh Battery Pack Installed in Collingwood Park",
     title: "Goodwe ESA 49.9kWh Battery Pack Installed in Collingwood Park",
