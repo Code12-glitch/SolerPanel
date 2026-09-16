@@ -1,3 +1,4 @@
+import ProjectDetails from '@/components/project-details';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
