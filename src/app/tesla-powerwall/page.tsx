@@ -149,9 +149,41 @@ const TeslaPowerwallPage = () => {
                     charge, solar generation historical data and useful
                     statistics. It provides 4 different control modes.
                   </p>
-                  
+                  <div class="blog-details-list">
+                    <ul>
+                      <li>
+                        <i class="bi bi-check2-circle"></i>{" "}
+                        <b>Self-Powered mode –</b> Increases self-consumption of
+                        solar by storing excess generation.
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-circle"></i>{" "}
+                        <b>Vehicle charging during a power outage –</b> Enables
+                        the Powerwall to Tesla EVA to dynamically adjust the
+                        charge rate to prevent overloading the system during a
+                        power outage.
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-circle"></i>{" "}
+                        <b>Time-based control –</b> Prioritises energy storage
+                        or consumption based on your electricity usage tariffs
+                        to reduce bills and save money.
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-circle"></i> <b>Storm watch –</b>{" "}
+                        Automatically charges the Powerwall in the event of a
+                        major storm or blackout.
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-circle"></i>{" "}
+                        <b>Vehicle charging during a power outage –</b> Enables
+                        the Powerwall to Tesla EVA to dynamically adjust the
+                        charge rate to prevent overloading the system during a
+                        power outage.
+                      </li>
+                    </ul>
+                  </div>
 
-                  
                   <Link href="/battery" className="battery-read-more">
                     ← Back to Battery Systems
                   </Link>
