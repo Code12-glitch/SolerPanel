@@ -118,7 +118,33 @@ import project_img_117 from "@/assets/images/michelton1/2.webp";
 import project_img_118 from "@/assets/images/michelton1/3.webp";
 import project_img_119 from "@/assets/images/tenthill/1.webp";
 import project_img_120 from "@/assets/images/tenthill/2.webp"; 
-
+import project_img_121 from "@/assets/images/nobby/1.webp";
+import project_img_122 from "@/assets/images/nobby/2.webp";
+import project_img_123 from "@/assets/images/heathwood/1.webp";
+import project_img_124 from "@/assets/images/heathwood/2.webp";
+import project_img_125 from "@/assets/images/heathwood/3.webp";
+import project_img_126 from "@/assets/images/heathwood/4.webp";
+import project_img_127 from "@/assets/images/heathwood/5.webp";
+import project_img_128 from "@/assets/images/munruben1/1.webp";
+import project_img_129 from "@/assets/images/munruben1/2.webp";
+import project_img_130 from "@/assets/images/munruben1/3.webp";
+import project_img_131 from "@/assets/images/munruben1/4.webp";
+import project_img_132 from "@/assets/images/munruben1/5.webp";
+import project_img_133 from "@/assets/images/munruben1/6.webp";
+import project_img_134 from "@/assets/images/hillcrest/1.webp";
+import project_img_135 from "@/assets/images/hillcrest/2.webp";
+import project_img_136 from "@/assets/images/hillcrest/3.webp";
+import project_img_137 from "@/assets/images/hillcrest/4.webp";
+import project_img_138 from "@/assets/images/hillcrest/5.webp";
+import project_img_139 from "@/assets/images/hillcrest/6.webp";   
+import project_img_140 from "@/assets/images/mundoolun/1.webp";  
+import project_img_141 from "@/assets/images/mundoolun/2.webp"; 
+import project_img_142 from "@/assets/images/waterford/1.webp"; 
+import project_img_143 from "@/assets/images/waterford/2.webp"; 
+import project_img_144 from "@/assets/images/waterford/3.webp"; 
+import project_img_145 from "@/assets/images/zillmere/1.webp"; 
+import project_img_146 from "@/assets/images/collingwoodpark/1.webp";
+import project_img_146 from "@/assets/images/collingwoodpark/2.webp";
 
 
 import { StaticImageData } from "next/image";
@@ -549,7 +575,89 @@ const battery_data: DataType[] = [
     name: "13.3kW Solar PV System with GoodWe ESA 24kWh Battery Pack installed in Lower Tenthill",
     title: "13.3kW Solar PV System with GoodWe ESA 24kWh Battery Pack installed in Lower Tenthill",
   },
-  
+  {
+    id: 40,
+    images: [
+      project_img_121,
+      project_img_122,
+    ],
+    name: "13.3kW Solar PV System with GoodWe ESA 24kWh Battery Pack installed in Nobby",
+    title: "13.3kW Solar PV System with GoodWe ESA 24kWh Battery Pack installed in Nobby",
+  },
+{
+    id: 41,
+    images: [
+      project_img_123,
+      project_img_124,
+      project_img_125,
+      project_img_126,
+      project_img_127,
+    ],
+    name: "13.3kW Solar PV System with GoodWe ESA 32kWh Battery Pack installed in Heathwood",
+    title: 13.3kW Solar PV System with GoodWe ESA 32kWh Battery Pack installed in Heathwood",
+  },
+{
+    id: 42,
+    images: [
+      project_img_128,
+      project_img_129,
+      project_img_130,
+      project_img_131,
+      project_img_132,
+      project_img_133,
+    ],
+    name: "13.3kW Solar PV System with GoodWe ESA 48kWh Battery Pack installed in Munruben",
+    title: "13.3kW Solar PV System with GoodWe ESA 48kWh Battery Pack installed in Munruben",
+  },
+{
+    id: 43,
+    images: [
+      project_img_134,
+      project_img_135,
+      project_img_136,
+      project_img_137,
+      project_img_138,
+      project_img_139,
+    ],
+    name: "13.3kW System with GoodWe 49.9kWh Battery Pack installed in Hillcrest",
+    title: "13.3kW System with GoodWe 49.9kWh Battery Pack installed in Hillcrest",
+  },
+{
+    id: 44,
+    images: [
+      project_img_140,
+      project_img_141,
+    ],
+    name: "GoodWe ESA 32kWh Battery Pack installed in Mundoolun",
+    title: "GoodWe ESA 32kWh Battery Pack installed in Mundoolun",
+  },
+{
+    id: 45,
+    images: [
+      project_img_142,
+      project_img_143,
+      project_img_144,
+    ],
+    name: "GoodWe ESA 32kWh Battery Pack installed in Waterford",
+    title: "GoodWe ESA 32kWh Battery Pack installed in Waterford",
+  },
+{
+id: 46,
+images: [      
+      project_img_145,
+], 
+name: "GoodWe ESA 48kWh Battery Pack installed in Zillmere",
+title: "GoodWe ESA 48kWh Battery Pack installed in Zillmere",
+},
+{
+id: 47,
+images: [      
+      project_img_146,
+      project_img_144,
+], 
+name: "Goodwe ESA 49.9kWh Battery Pack Installed in Collingwood Park",
+title: "Goodwe ESA 49.9kWh Battery Pack Installed in Collingwood Park",
+},
 
   
 
