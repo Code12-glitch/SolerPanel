@@ -1,20 +1,18 @@
 "use client";
 
-import project_data from "@/data/ProjectData";
+import gridsystem_data from "@/data/GridSystemData";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const perView = 100;
 
-const ProjectGridArea = () => {
+const GridConnectedSystemsArea = () => {
   const [next, setNext] = useState(perView);
 
-  // Load More
   const handleLoadMore = () => {
     setNext((value) => value + 3);
   };
 
-  // Initialize Owl Carousel for each project image slider
   useEffect(() => {
     const timer = setTimeout(() => {
       const $ = (window as any).jQuery;
@@ -32,7 +30,6 @@ const ProjectGridArea = () => {
       $(".project-image-carousel").each(function () {
         const carousel = $(this);
 
-        // Destroy existing carousel before re-initializing
         if (carousel.hasClass("owl-loaded")) {
           carousel.trigger("destroy.owl.carousel");
         }
@@ -79,7 +76,6 @@ const ProjectGridArea = () => {
     <section className="project-grid-section">
       <div className="container">
 
-        {/* Page Heading */}
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title text-center">
@@ -88,9 +84,8 @@ const ProjectGridArea = () => {
           </div>
         </div>
 
-        {/* 3 Column Project Grid */}
         <div className="project-grid">
-          {project_data.slice(0, next).map((item) => {
+          {gridsystem_data.slice(0, next).map((item) => {
             const images = Array.isArray(item.images)
               ? item.images
               : [item.images];
@@ -100,8 +95,6 @@ const ProjectGridArea = () => {
                 key={item.id}
                 className="project-grid-box"
               >
-
-                {/* Project Image Slider */}
                 <div className="project-thumb">
                   <div className="owl-carousel owl-theme project-image-carousel">
 
@@ -123,18 +116,15 @@ const ProjectGridArea = () => {
                   </div>
                 </div>
 
-                {/* Project Title */}
                 <div className="project-content">
                   <h4>{item.title}</h4>
                 </div>
-
               </div>
             );
           })}
         </div>
 
-        {/* Load More */}
-        {next < project_data.length && (
+        {next < gridsystem_data.length && (
           <div className="load-more text-center">
             <button
               type="button"
@@ -151,4 +141,4 @@ const ProjectGridArea = () => {
   );
 };
 
-export default ProjectGridArea;
+export default GridConnectedSystemsArea;

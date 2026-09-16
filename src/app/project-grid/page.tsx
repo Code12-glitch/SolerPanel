@@ -1,5 +1,5 @@
 
-import ProjectGrid from '@/components/project-grid';
+import ProjectGrid from '@/components/grid-connected-systems';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 

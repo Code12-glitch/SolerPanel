@@ -424,4 +424,4 @@ const project_data: DataType[] = [
   
 ];
 
-export default project_data;
+export default ProjectGridArea;

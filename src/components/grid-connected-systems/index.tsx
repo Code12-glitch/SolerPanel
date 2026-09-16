@@ -2,9 +2,11 @@
 import React from 'react';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
-import ProjectGridArea from './ProjectGridArea';
+import GridConnectedSystemsArea from "@/components/grid-connected-systems";
+import GridConnectedSystemsArea from "./GridConnectedSystemsArea";
 import SubscribeAreaHomeOne from '../homes/home/SubscribeAreaHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne';
+
 
 const ProjectGrid = () => {
   return (
@@ -12,7 +14,7 @@ const ProjectGrid = () => {
       <HeaderOne />
       <main>
         <Breadcrumb top_title="Grid Connected Systems" title="Grid Connected Systems" />
-        <ProjectGridArea />
+        <GridConnectedSystemsArea />
         <SubscribeAreaHomeOne />
       </main>
       <FooterOne />
@@ -20,4 +22,4 @@ const ProjectGrid = () => {
   );
 };
 
-export default ProjectGrid;
+export default GridConnectedSystemsArea;
