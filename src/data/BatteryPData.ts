@@ -5,7 +5,7 @@ const battery_data = [
     title: "Tesla Powerwall 2",
     description:
       "With the release of the first-generation Powerwall almost 7 years ago Tesla Energy made a big impact in the solar world and pushed home energy storage into the mainstream.",
-    link: "/tesla-powerwall-2",
+    link: "/tesla-powerwall",
   },
 
   {
@@ -19,7 +19,7 @@ const battery_data = [
 
   {
     id: 3,
-    image: "/assets/images/battery/SUNGROW.webp",
+    image: "/assets/images/battery/SUNGROW2.webp",
     title: "Sungrow",
     description:
       "Sungrow was founded in China in 1997 by Professor Cao Renxian from Hefei University of Technology, China. Sungrow solar inverters are highly reliable and backed by excellent tech support.",
@@ -32,7 +32,7 @@ const battery_data = [
     title: "Alpha-ESS",
     description:
       "Alpha-ESS is a Chinese manufacturer based in Jiangsu, China, and makes its batteries in Suzhou, China. It was founded in 2012 and has 10+ subsidiaries providing local services",
-    link: "/alpha-ess",
+    link: "/alphaess",
   },
 ];
 

@@ -21,48 +21,37 @@ const BatteryArea = () => {
 
         {/* Battery Cards */}
         <div className="battery-card-wrapper">
-          {battery_data.map((item) => {
-            const image = Array.isArray(item.images)
-              ? item.images[0]
-              : item.images;
+          {battery_data.map((item) => (
+            <div className="battery-card" key={item.id}>
 
-            return (
-              <div className="battery-card" key={item.id}>
-
-                {/* LEFT - LOGO / IMAGE */}
-                <div className="battery-card-logo">
-                  <Image
-                    src={image}
-                    width={250}
-                    height={180}
-                    alt={item.title}
-                    className="battery-logo"
-                  />
-                </div>
-
-                {/* RIGHT - CONTENT */}
-                <div className="battery-card-content">
-
-                  <h3>{item.title}</h3>
-
-                  <p>
-                    {item.description ||
-                      "Discover our reliable battery storage solutions designed to store solar energy and provide efficient power when you need it."}
-                  </p>
-
-                  <Link
-                    href={item.link || "#"}
-                    className="battery-read-more"
-                  >
-                    Read More
-                    <span>→</span>
-                  </Link>
-
-                </div>
-
+              {/* LEFT - LOGO / IMAGE */}
+              <div className="battery-card-logo">
+                <Image
+                  src={item.image}
+                  width={250}
+                  height={180}
+                  alt={item.title}
+                  className="battery-logo"
+                />
               </div>
-            );
-          })}
+
+              {/* RIGHT - CONTENT */}
+              <div className="battery-card-content">
+                <h3>{item.title}</h3>
+
+                <p>{item.description}</p>
+
+                <Link
+                  href={item.link}
+                  className="battery-read-more"
+                >
+                  Read More
+                  <span>→</span>
+                </Link>
+              </div>
+
+            </div>
+          ))}
         </div>
 
       </div>
