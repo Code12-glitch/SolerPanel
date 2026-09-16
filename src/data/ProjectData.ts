@@ -86,6 +86,9 @@ import project_img_85 from "@/assets/images/waterfordwest/3.webp";
 import project_img_86 from "@/assets/images/waterfordwest/3.webp";
 import project_img_87 from "@/assets/images/ipswich/1.webp";
 import project_img_88 from "@/assets/images/ipswich/2.webp";
+import project_img_89 from "@/assets/images/yarrabilba/1.webp";
+import project_img_90 from "@/assets/images/yarrabilba/2.webp";
+
 
 
 
@@ -392,6 +395,25 @@ const project_data: DataType[] = [
     ],
     name: "6.6kW System Installed in Waterford West",
     title: "6.6kW System Installed in Waterford West",
+  },
+{
+    id: 28,
+    images: [
+      project_img_87,
+      project_img_88,
+    ],
+    name: "5kW System Installed in West Ipswich",
+    title: "5kW System Installed in West Ipswich",
+  },
+  
+{
+    id: 29,
+    images: [
+      project_img_89,
+      project_img_90,
+    ],
+    name: "6.6kW System Installed in Yarrabilba",
+    title: "6.6kW System Installed in Yarrabilba",
   },
   
   
