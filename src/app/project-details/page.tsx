@@ -1,22 +1,18 @@
-
-
-import ProjectDetails from '@/components/Grid-Connected Systems';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
-export const metadata = {
-  title: 'Project Details - SolerPanel-Solar & Renewable Energy React Next js Template',
-  description: 'The Solar Panel React Next js template is a modern and responsive design specifically created for websites related to solar energy and renewable energy solutions',
-}
-
-
-
-const index = () => {
+const ProjectDetailsPage = () => {
   return (
     <Wrapper>
-      <ProjectDetails />
+      <main>
+        <section className="project-details-area">
+          <div className="container">
+            <h1>Project Details</h1>
+          </div>
+        </section>
+      </main>
     </Wrapper>
   );
 };
 
-export default index;
+export default ProjectDetailsPage;
