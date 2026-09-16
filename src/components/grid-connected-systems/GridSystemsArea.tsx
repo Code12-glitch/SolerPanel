@@ -4,7 +4,7 @@ import grid_data from "@/data/GridData";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-const perView = 6;
+const perView = 100;
 
 const GridSystemsArea = () => {
   const [next, setNext] = useState(perView);
