@@ -79,6 +79,13 @@ import project_img_78 from "@/assets/images/victoriapoint1/2.webp";
 import project_img_79 from "@/assets/images/victoriapoint-goodwe/1.webp";
 import project_img_80 from "@/assets/images/victoriapoint-goodwe/2.webp";
 import project_img_81 from "@/assets/images/victoriapoint-goodwe/3.webp";
+import project_img_82 from "@/assets/images/waterfordwest/1.webp";
+import project_img_83 from "@/assets/images/waterfordwest/2.webp";
+import project_img_84 from "@/assets/images/waterfordwest/3.webp";
+import project_img_85 from "@/assets/images/waterfordwest/3.webp";
+import project_img_86 from "@/assets/images/waterfordwest/3.webp";
+import project_img_87 from "@/assets/images/ipswich/1.webp";
+import project_img_88 from "@/assets/images/ipswich/2.webp";
 
 
 
@@ -374,6 +381,20 @@ const project_data: DataType[] = [
     name: "13.2kW System Installed in Victoria Point (GoodWe)",
     title: "13.2kW System Installed in Victoria Point (GoodWe)",
   },
+{
+    id: 27,
+    images: [
+      project_img_82,
+      project_img_83,
+	  project_img_84,
+	  project_img_85,
+	  project_img_86,
+    ],
+    name: "6.6kW System Installed in Waterford West",
+    title: "6.6kW System Installed in Waterford West",
+  },
+  
+  
 
 
 
