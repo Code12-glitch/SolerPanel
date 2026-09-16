@@ -106,115 +106,103 @@ const ProjectGridArea = () => {
   }, [items, next]);
 
   return (
-    <section className="project-grid-section">
-      <div className="container">
+   <section className="project-grid-section">
+  <div className="container">
 
-        {/* =====================================
-            Portfolio Filter
-        ====================================== */}
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="protfolio-nav text-center">
-              <div className="protfolio-menu">
-                <ul className="menu-filtering">
+    {/* =====================================
+        Page Heading
+    ====================================== */}
+    <div className="row">
+      <div className="col-lg-12">
+        <div className="section-title text-center">
+          <h2>Grid Connected System</h2>
+        </div>
+      </div>
+    </div>
 
-                  {categories.map((category) => (
-                    <li
-                      key={category}
-                      onClick={() => filterItems(category)}
-                      className={
-                        category === activeCategory
-                          ? "active current_menu_item"
-                          : "current_menu_item"
-                      }
-                    >
-                      {category}
-                    </li>
-                  ))}
+    {/* =====================================
+        Portfolio Filter
+    ====================================== */}
+    <div className="row">
+      <div className="col-lg-12">
+        <div className="protfolio-nav text-center">
+          <div className="protfolio-menu">
+            <ul className="menu-filtering">
+              {categories.map((category) => (
+                <li
+                  key={category}
+                  onClick={() => filterItems(category)}
+                  className={
+                    category === activeCategory
+                      ? "active current_menu_item"
+                      : "current_menu_item"
+                  }
+                >
+                  {category}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                </ul>
+    {/* =====================================
+        3 COLUMN PROJECT GRID
+    ====================================== */}
+    <div className="project-grid">
+      {items.slice(0, next).map((item) => {
+        const images = Array.isArray(item.images)
+          ? item.images
+          : [item.images];
+
+        return (
+          <div key={item.id} className="project-grid-box">
+
+            <div className="project-thumb">
+              <div className="owl-carousel owl-theme project-image-carousel">
+                {images.map((image, imageIndex) => (
+                  <div
+                    key={`${item.id}-image-${imageIndex}`}
+                    className="project-slide"
+                  >
+                    <Image
+                      src={image}
+                      width={600}
+                      height={400}
+                      alt={`${item.title} - Image ${imageIndex + 1}`}
+                      className="project-image"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* =====================================
-            3 COLUMN PROJECT GRID
-        ====================================== */}
-        <div className="project-grid">
-
-          {items.slice(0, next).map((item) => {
-            const images = Array.isArray(item.images)
-              ? item.images
-              : [item.images];
-
-            return (
-              <div
-                key={item.id}
-                className="project-grid-box"
-              >
-
-                {/* Project Image */}
-                <div className="project-thumb">
-
-                  {/* Inner image carousel only */}
-                  <div className="owl-carousel owl-theme project-image-carousel">
-
-                    {images.map((image, imageIndex) => (
-                      <div
-                        key={`${item.id}-image-${imageIndex}`}
-                        className="project-slide"
-                      >
-                        <Image
-                          src={image}
-                          width={600}
-                          height={400}
-                          alt={`${item.title} - Image ${
-                            imageIndex + 1
-                          }`}
-                          className="project-image"
-                        />
-                      </div>
-                    ))}
-
-                  </div>
-
-                </div>
-
-                {/* Project Content */}
-                <div className="project-content">
-
-                  <h4>{item.title}</h4>
-
-                  <span>{item.category}</span>
-
-                </div>
-
-              </div>
-            );
-          })}
-
-        </div>
-
-        {/* =====================================
-            Load More
-        ====================================== */}
-        {next < items.length && (
-          <div className="load-more text-center">
-
-            <button
-              type="button"
-              className="load-more-btn"
-              onClick={handleLoadMore}
-            >
-              Load More
-            </button>
+            <div className="project-content">
+              <h4>{item.title}</h4>
+              <span>{item.category}</span>
+            </div>
 
           </div>
-        )}
+        );
+      })}
+    </div>
 
+    {/* Load More */}
+    {next < items.length && (
+      <div className="load-more text-center">
+        <button
+          type="button"
+          className="load-more-btn"
+          onClick={handleLoadMore}
+        >
+          Load More
+        </button>
       </div>
-    </section>
+    )}
+
+  </div>
+</section>
   );
 };
 
