@@ -101,7 +101,7 @@ interface DataType {
   title: string;
 }
 
-const project_data: DataType[] = [
+const grid_data: DataType[] = [
   {
     id: 1,
     images: [
@@ -417,11 +417,5 @@ const project_data: DataType[] = [
   },
   
   
-
-
-
-  
-  
 ];
-
-export default ProjectGridArea;
+export default grid_data;

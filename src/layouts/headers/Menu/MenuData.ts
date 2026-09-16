@@ -64,7 +64,7 @@ const menu_data: DataType[] = [
 		link: "#",
 		has_dropdown: true,
 		sub_menus: [
-			{ link: "/project-grid", title: "Project Grid" },
+			{ link: "/grid-connected-system", title: "Grid Connected Systems" },
 			{ link: "/project-details", title: "Project Details" },
 		],
 	},

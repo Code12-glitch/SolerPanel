@@ -1,12 +1,12 @@
 "use client";
 
-import gridsystem_data from "@/data/GridSystemData";
+import grid_data from "@/data/GridData";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const perView = 100;
 
-const GridConnectedSystemsArea = () => {
+const ProjectGridArea = () => {
   const [next, setNext] = useState(perView);
 
   const handleLoadMore = () => {
@@ -14,7 +14,7 @@ const GridConnectedSystemsArea = () => {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const initializeCarousel = () => {
       const $ = (window as any).jQuery;
 
       if (!$) {
@@ -30,8 +30,10 @@ const GridConnectedSystemsArea = () => {
       $(".project-image-carousel").each(function () {
         const carousel = $(this);
 
+        // Prevent duplicate Owl Carousel initialization
         if (carousel.hasClass("owl-loaded")) {
           carousel.trigger("destroy.owl.carousel");
+          carousel.removeClass("owl-loaded");
         }
 
         carousel.owlCarousel({
@@ -51,7 +53,10 @@ const GridConnectedSystemsArea = () => {
           ],
         });
       });
-    }, 300);
+    };
+
+    // Give the DOM time to render
+    const timer = setTimeout(initializeCarousel, 100);
 
     return () => {
       clearTimeout(timer);
@@ -76,16 +81,18 @@ const GridConnectedSystemsArea = () => {
     <section className="project-grid-section">
       <div className="container">
 
+        {/* Section Title */}
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title text-center">
-              <h2>Grid Connected System</h2>
+              <h2>Grid Connected System<br></br></h2>
             </div>
           </div>
         </div>
 
+        {/* Project Grid */}
         <div className="project-grid">
-          {gridsystem_data.slice(0, next).map((item) => {
+          {grid_data.slice(0, next).map((item) => {
             const images = Array.isArray(item.images)
               ? item.images
               : [item.images];
@@ -95,9 +102,9 @@ const GridConnectedSystemsArea = () => {
                 key={item.id}
                 className="project-grid-box"
               >
+                {/* Project Images */}
                 <div className="project-thumb">
                   <div className="owl-carousel owl-theme project-image-carousel">
-
                     {images.map((image, imageIndex) => (
                       <div
                         key={`${item.id}-image-${imageIndex}`}
@@ -112,10 +119,10 @@ const GridConnectedSystemsArea = () => {
                         />
                       </div>
                     ))}
-
                   </div>
                 </div>
 
+                {/* Project Title */}
                 <div className="project-content">
                   <h4>{item.title}</h4>
                 </div>
@@ -124,7 +131,8 @@ const GridConnectedSystemsArea = () => {
           })}
         </div>
 
-        {next < gridsystem_data.length && (
+        {/* Load More */}
+        {next < grid_data.length && (
           <div className="load-more text-center">
             <button
               type="button"
@@ -141,4 +149,4 @@ const GridConnectedSystemsArea = () => {
   );
 };
 
-export default GridConnectedSystemsArea;
+export default ProjectGridArea;
