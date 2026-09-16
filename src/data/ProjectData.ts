@@ -9,7 +9,7 @@ import { StaticImageData } from "next/image";
 
 interface DataType {
   id: number;
-  img: StaticImageData;
+  images: StaticImageData[];
   name: string;
   title: string;
   category: string;
@@ -19,42 +19,42 @@ interface DataType {
 const project_data:DataType[] = [
 	{
 		id: 1,
-		img: project_img_1,
+		images: [ project_img_1, project_img_2, project_img_3],
 		name: "Chain Finance Program",
 		title: "ECO, Supply Chain",
 		category: "Business",
 	},
   {
 		id: 2,
-		img: project_img_2,
+		images: [ project_img_4, project_img_5],
 		name: "New Public Attitude Tracker",
 		title: "Digital Product",
 		category: "Energy",
 	},
   {
 		id: 3,
-		img: project_img_3,
+		images: [ project_img_6],
 		name: "Smarter Ways to Manage",
 		title: "ECO, Supply Chain",
 		category: "Finance",
 	},
   {
 		id: 4,
-		img: project_img_4,
+		images: [ project_img_1, project_img_6, project_img_4],
 		name: "Task Managemen",
 		title: "Creative Work",
 		category: "Supply Chain",
 	},
   {
 		id: 5,
-		img: project_img_5,
+		images: project_img_2,
 		name: "Addressing Wind Energy",
 		title: "ECO, Supply Chain",
 		category: "Business",
 	},
   {
 		id: 6,
-		img: project_img_6,
+		images: [ project_img_1, project_img_2, project_img_3],
 		name: "Historical Book Design",
 		title: "Finance, Supply",
 		category: "Energy",
@@ -62,42 +62,42 @@ const project_data:DataType[] = [
   // update
   {
 		id: 1,
-		img: project_img_4,
+		images: [ project_img_1, project_img_2, project_img_3],
 		name: "Chain Finance Program",
 		title: "ECO, Supply Chain",
 		category: "Business",
 	},
   {
 		id: 2,
-		img: project_img_5,
+		images: project_img_5,
 		name: "New Public Attitude Tracker",
 		title: "Digital Product",
 		category: "Supply Chain",
 	},
   {
 		id: 3,
-		img: project_img_6,
+		images: project_img_6,
 		name: "Smarter Ways to Manage",
 		title: "ECO, Supply Chain",
 		category: "Finance",
 	},
   {
 		id: 4,
-		img: project_img_1,
+		images: project_img_1,
 		name: "Task Managemen",
 		title: "Creative Work",
 		category: "Supply Chain",
 	},
   {
 		id: 5,
-		img: project_img_2,
+		images: project_img_2,
 		name: "Addressing Wind Energy",
 		title: "ECO, Supply Chain",
 		category: "Business",
 	},
   {
 		id: 6,
-		img: project_img_3,
+		images: project_img_3,
 		name: "Historical Book Design",
 		title: "Finance, Supply",
 		category: "Energy",
@@ -105,28 +105,28 @@ const project_data:DataType[] = [
   // update
   {
 		id: 3,
-		img: project_img_6,
+		images: project_img_6,
 		name: "Smarter Ways to Manage",
 		title: "ECO, Supply Chain",
 		category: "Supply Chain",
 	},
   {
 		id: 4,
-		img: project_img_1,
+		images: project_img_1,
 		name: "Task Managemen",
 		title: "Creative Work",
 		category: "Energy",
 	},
   {
 		id: 5,
-		img: project_img_2,
+		images: project_img_2,
 		name: "Addressing Wind Energy",
 		title: "ECO, Supply Chain",
 		category: "Energy",
 	},
   {
 		id: 6,
-		img: project_img_3,
+		images: project_img_3,
 		name: "Historical Book Design",
 		title: "Finance, Supply",
 		category: "Business",
@@ -134,14 +134,14 @@ const project_data:DataType[] = [
 
   {
 		id: 2,
-		img: project_img_2,
+		images: project_img_2,
 		name: "New Public Attitude Tracker",
 		title: "Digital Product",
 		category: "Finance",
 	},
   {
 		id: 3,
-		img: project_img_3,
+		images: project_img_3,
 		name: "Smarter Ways to Manage",
 		title: "ECO, Supply Chain",
 		category: "Supply Chain",
