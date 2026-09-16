@@ -72,6 +72,10 @@ import project_img_71 from "@/assets/images/toowoomba/1.webp";
 import project_img_72 from "@/assets/images/toowoomba/2.webp";
 import project_img_73 from "@/assets/images/toowoomba/3.webp";
 import project_img_74 from "@/assets/images/toowoomba/4.webp";
+import project_img_75 from "@/assets/images/victoriapoint/1.webp";
+import project_img_76 from "@/assets/images/victoriapoint/2.webp";
+import project_img_77 from "@/assets/images/victoriapoint1/1.webp";
+import project_img_78 from "@/assets/images/victoriapoint1/2.webp";
 
 
 
@@ -338,6 +342,18 @@ const project_data: DataType[] = [
     name: "6.6kW System Installed in Toowoomba",
     title: "6.6kW System Installed in Toowoomba",
   },
+
+  {
+    id: 24,
+    images: [
+      project_img_75,
+      project_img_76,
+    ],
+    name: "6.6kW System Installed in Victoria Point",
+    title: "6.6kW System Installed in Victoria Point",
+  },
+
+  
 
   
   
