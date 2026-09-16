@@ -88,6 +88,37 @@ import project_img_87 from "@/assets/images/anstead/4.webp";
 import project_img_88 from "@/assets/images/pallara1/1.webp";
 import project_img_89 from "@/assets/images/pallara1/2.webp";
 import project_img_90 from "@/assets/images/pallara1/3.webp";
+import project_img_91 from "@/assets/images/collingwood/1.webp";
+import project_img_92 from "@/assets/images/collingwood/2.webp";
+import project_img_93 from "@/assets/images/collingwood/3.webp";
+import project_img_94 from "@/assets/images/palmview/1.webp";
+import project_img_95 from "@/assets/images/palmview/2.webp";
+import project_img_96 from "@/assets/images/palmview/3.webp";
+import project_img_97 from "@/assets/images/palmview/4.webp";
+import project_img_98 from "@/assets/images/palmview/5.webp";
+import project_img_99 from "@/assets/images/palmview/6.webp";
+import project_img_100 from "@/assets/images/hollandparkwest/1.webp";
+import project_img_101 from "@/assets/images/hollandparkwest/2.webp";
+import project_img_102 from "@/assets/images/pallara2/1.webp";
+import project_img_103 from "@/assets/images/pallara2/2.webp";
+import project_img_104 from "@/assets/images/pallaragoodwe/1.webp";
+import project_img_105 from "@/assets/images/pallaragoodwe/2.webp";
+import project_img_106 from "@/assets/images/sigenergy1/1.webp";
+import project_img_107 from "@/assets/images/sigenergy1/2.webp";
+import project_img_108 from "@/assets/images/sigenergy1/3.webp";
+import project_img_109 from "@/assets/images/sigenergy1/4.webp";
+import project_img_110 from "@/assets/images/sigenergy1/5.webp";
+import project_img_111 from "@/assets/images/doolandella/1.webp";
+import project_img_112 from "@/assets/images/doolandella/2.webp";
+import project_img_113 from "@/assets/images/doolandella/3.webp";
+import project_img_114 from "@/assets/images/doolandella/4.webp";
+import project_img_115 from "@/assets/images/doolandella/5.webp";
+import project_img_116 from "@/assets/images/michelton1/1.webp";
+import project_img_117 from "@/assets/images/michelton1/2.webp";
+import project_img_118 from "@/assets/images/michelton1/3.webp";
+import project_img_119 from "@/assets/images/tenthill/1.webp";
+import project_img_120 from "@/assets/images/tenthill/2.webp"; 
+
 
 
 import { StaticImageData } from "next/image";
@@ -423,6 +454,104 @@ const battery_data: DataType[] = [
     name: "FOX ESS 47.92kWh Battery Pack Installed in Pallara",
     title: "FOX ESS 47.92kWh Battery Pack Installed in Pallara",
   },
+
+  {
+    id: 31,
+    images: [
+      project_img_91,
+      project_img_92,
+      project_img_93,
+    ],
+    name: "FOX ESS 41.93kWh Battery Pack Installed in Collingwood Park",
+    title: "FOX ESS 41.93kWh Battery Pack Installed in Collingwood Park",
+  },
+  {
+    id: 32,
+    images: [  
+     project_img_94,
+     project_img_95,
+     project_img_96,
+     project_img_97,
+     project_img_98,
+     project_img_99,
+    ],
+    name: "FOX ESS 47.92kWh Battery Pack Installed in Palmview",
+    title: "FOX ESS 47.92kWh Battery Pack Installed in Palmview",
+  },
+  {
+    id: 33,
+    images: [
+      project_img_100,
+      project_img_101,
+    ],
+    name: "FOX ESS 41.93kWh Battery Pack Installed in Holland Park West",
+    title: "FOX ESS 41.93kWh Battery Pack Installed in Holland Park West",
+  },
+
+  {
+    id: 34,
+    images: [
+      project_img_102,
+      project_img_103,
+    ],
+    name: "FOX ESS 47.92kWh Battery Pack Installed in Pallara_1",
+    title: "FOX ESS 47.92kWh Battery Pack Installed in Pallara_1",
+  },
+{
+    id: 35,
+    images: [
+      project_img_104,
+      project_img_105,
+    ],
+    name: "GoodWe ESA 48kWh Battery Pack in Pallara",
+    title: "GoodWe ESA 48kWh Battery Pack in Pallara",
+  },
+{
+    id: 36,
+    images: [
+      project_img_106,
+      project_img_107,
+      project_img_108,
+      project_img_109,
+      project_img_110,
+    ],
+    name: "6.6kW System with Sigenergy 24kWh Battery Pack",
+    title: "6.6kW System with Sigenergy 24kWh Battery Pack",
+  },
+{
+    id: 37,
+    images: [
+      project_img_111,
+      project_img_112,
+      project_img_113,
+      project_img_114,
+      project_img_115,
+    ],
+    name: "6.6W System with GoodWe ESA 41.6kWh Battery Pack installed in Doolandella",
+    title: "6.6W System with GoodWe ESA 41.6kWh Battery Pack installed in Doolandella",
+  },
+{
+    id: 38,
+    images: [
+      project_img_116,
+      project_img_117,
+      project_img_118,
+    ],
+    name: "11.4kW System with Goodwe ESA 48kWh Battery Pack in Michelton",
+    title: "11.4kW System with Goodwe ESA 48kWh Battery Pack in Michelton",
+  },
+{
+    id: 39,
+    images: [
+      project_img_119,
+      project_img_120,
+    ],
+    name: "13.3kW Solar PV System with GoodWe ESA 24kWh Battery Pack installed in Lower Tenthill",
+    title: "13.3kW Solar PV System with GoodWe ESA 24kWh Battery Pack installed in Lower Tenthill",
+  },
+  
+
+  
 
 ];
 export default battery_data;
