@@ -39,6 +39,55 @@ import project_img_38 from "@/assets/images/karalee1/2.webp";
 import project_img_39 from "@/assets/images/alexandrahills/1.webp";
 import project_img_40 from "@/assets/images/laidleyheights/1.webp";
 import project_img_41 from "@/assets/images/laidleyheights/2.webp";
+import project_img_42 from "@/assets/images/kingsholme/1.webp";
+import project_img_43 from "@/assets/images/kooralbyn/1.webp";
+import project_img_44 from "@/assets/images/kooralbyn/2.webp";
+import project_img_45 from "@/assets/images/alexandrahills1/1.webp";
+import project_img_46 from "@/assets/images/riverview/1.webp";
+import project_img_47 from "@/assets/images/riverview/2.webp";
+import project_img_48 from "@/assets/images/strathpine/1.webp";
+import project_img_49 from "@/assets/images/strathpine/2.webp";
+import project_img_50 from "@/assets/images/sunnybank1/1.webp";
+import project_img_51 from "@/assets/images/sunnybank1/2.webp";
+import project_img_52 from "@/assets/images/yarrabilba1/1.webp";
+import project_img_53 from "@/assets/images/yarrabilba1/2.webp";
+import project_img_54 from "@/assets/images/yarrabilba1/3.webp";
+import project_img_55 from "@/assets/images/mountcotton/1.webp";
+import project_img_56 from "@/assets/images/mountcotton/2.webp";
+import project_img_57 from "@/assets/images/thornlands1/1.webp";
+import project_img_58 from "@/assets/images/thornlands1/2.webp";
+import project_img_59 from "@/assets/images/thornlands1/3.webp";
+import project_img_60 from "@/assets/images/foxessbatterypack/1.webp";
+import project_img_61 from "@/assets/images/foxessbatterypack/2.webp";
+import project_img_62 from "@/assets/images/foxessbatterypack/3.webp";
+import project_img_63 from "@/assets/images/foxessbatterypack/4.webp";
+import project_img_64 from "@/assets/images/bahrsscrub/1.webp";
+import project_img_65 from "@/assets/images/bahrsscrub/2.webp";
+import project_img_66 from "@/assets/images/bahrsscrub/3.webp";
+import project_img_67 from "@/assets/images/bahrsscrub/1.webp";
+import project_img_68 from "@/assets/images/sigenergy/1.webp";
+import project_img_69 from "@/assets/images/sigenergy/2.webp";
+import project_img_70 from "@/assets/images/sigenergy/3.webp";
+import project_img_71 from "@/assets/images/sigenergy/4.webp";
+import project_img_72 from "@/assets/images/sigenergy/5.webp";
+import project_img_73 from "@/assets/images/loganlea/1.webp";
+import project_img_74 from "@/assets/images/loganlea/2.webp";
+import project_img_75 from "@/assets/images/loganlea/3.webp";
+import project_img_76 from "@/assets/images/pallara/1.webp";
+import project_img_77 from "@/assets/images/pallara/2.webp";
+import project_img_78 from "@/assets/images/greenbank2/1.webp";
+import project_img_79 from "@/assets/images/greenbank2/2.webp";
+import project_img_80 from "@/assets/images/greenbank2/3.webp";
+import project_img_81 from "@/assets/images/greenbank2/4.webp";
+import project_img_82 from "@/assets/images/greenbank2/5.webp";
+import project_img_83 from "@/assets/images/greenbank2/6.webp";
+import project_img_84 from "@/assets/images/anstead/1.webp";
+import project_img_85 from "@/assets/images/anstead/2.webp";
+import project_img_86 from "@/assets/images/anstead/3.webp";
+import project_img_87 from "@/assets/images/anstead/4.webp";
+import project_img_88 from "@/assets/images/pallara1/1.webp";
+import project_img_89 from "@/assets/images/pallara1/2.webp";
+import project_img_90 from "@/assets/images/pallara1/3.webp";
 
 
 import { StaticImageData } from "next/image";
@@ -196,24 +245,19 @@ const battery_data: DataType[] = [
     id: 14,
     images: [
       project_img_42,
-      project_img_43,
-      project_img_44,
-      project_img_45,
-      project_img_46,
     ],
-    name: "6.6kW System Installed in Morayfield",
-    title: "6.6kW System Installed in Morayfield",
+    name: "DC-Coupled FOX ESS 41.93kWh Battery Pack Installed in Kingsholme",
+    title: "DC-Coupled FOX ESS 41.93kWh Battery Pack Installed in Kingsholme",
   },
 
   {
     id: 15,
     images: [
-      project_img_47,
-      project_img_48,
-      project_img_49,
+      project_img_43,
+      project_img_44,
     ],
-    name: "13.2kW System Installed in Munruben",
-    title: "13.2kW System Installed in Munruben",
+    name: "DC-Coupled FOX ESS 41.93kWh Battery Pack Installed in Kooralbyn",
+    title: "DC-Coupled FOX ESS 41.93kWh Battery Pack Installed in Kooralbyn",
   },
 
 
@@ -221,150 +265,164 @@ const battery_data: DataType[] = [
   {
     id: 16,
     images: [
-      project_img_50,
-      project_img_51,
-      project_img_52,
+      project_img_45,
     ],
-    name: "6.6kW System Installed in Narangba",
-    title: "6.6kW System Installed in Narangba",
+    name: "AC-Coupled Alpha ESS 26.6kWh Battery Pack Installed in Alexandra Hills",
+    title: "AC-Coupled Alpha ESS 26.6kWh Battery Pack Installed in Alexandra Hills",
   },
   {
     id: 17,
     images: [
-      project_img_53,
-      project_img_54,
-      project_img_55,
-      project_img_56,
+      
+      project_img_46,
+      project_img_47,
     ],
-    name: "13.2kW System Installed in Redbank Plains",
-    title: "13.2kW System Installed in Redbank Plains",
+    name: "5.72kW System with FOX ESS 32.62kWh Battery Pack Installed in Riverview",
+    title: "5.72kW System with FOX ESS 32.62kWh Battery Pack Installed in Riverview",
   },
   {
     id: 18,
     images: [
-      project_img_57,
-      project_img_58,
+      project_img_48,
+      project_img_49,
     ],
-    name: "6.6kW System Installed in Rochedale South",
-    title: "6.6kW System Installed in Rochedale South",
+    name: "AC-Coupled Alpha ESS 26.6kWh Battery Pack Installed in Strathpine",
+    title: "AC-Coupled Alpha ESS 26.6kWh Battery Pack Installed in Strathpine",
   },
   {
     id: 19,
     images: [
-      project_img_59,
-      project_img_60,
+      project_img_50,
+      project_img_51,
     ],
-    name: "5kW System Installed in Shailer Park",
-    title: "5kW System Installed in Shailer Park",
+    name: "Alpha ESS 26.6kWh Battery Pack Installed in Sunnybank",
+    title: "Alpha ESS 26.6kWh Battery Pack Installed in Sunnybank",
   },
   {
     id: 20,
     images: [
-      project_img_61,
-      project_img_62,
-      project_img_63,
+      project_img_52,
+      project_img_53,
+      project_img_54,
     ],
-    name: "6.6kW System installed in Sunnybank",
-    title: "6.6kW System installed in Sunnybank",
+    name: "FOX ESS 37.27kWh Battery Pack Installation in Yarrabilba",
+    title: "FOX ESS 37.27kWh Battery Pack Installation in Yarrabilba",
   },
 
 
   {
     id: 21,
     images: [
-      project_img_64,
-      project_img_65,
-      project_img_66,
-      project_img_67,
+      
+      project_img_55,
+      project_img_56,
     ],
-    name: "6.6kW System installed in Thornlands",
-    title: "6.6kW System installed in Thornlands",
+    name: "FOX ESS 23.3kWh Battery Pack Installed in Mount Cotton",
+    title: "FOX ESS 23.3kWh Battery Pack Installed in Mount Cotton",
   },
 
 
   {
     id: 22,
-    images: [
-      project_img_68,
-      project_img_69,
-      project_img_70,
+    images: [     
+      project_img_57,
+      project_img_58,
+      project_img_59,
     ],
-    name: "13.2kW System Installed In Toowong",
-    title: "13.2kW System Installed In Toowong",
+    name: "Sungrow SBH400 Battery Installed in Thornlands",
+    title: "Sungrow SBH400 Battery Installed in Thornlands",
   },
 
   {
     id: 23,
-    images: [
-      project_img_71,
-      project_img_72,
-      project_img_73,
-      project_img_74,
+    images: [     
+      project_img_60,
+      project_img_61,
+      project_img_62,
+      project_img_63,
     ],
-    name: "6.6kW System Installed in Toowoomba",
-    title: "6.6kW System Installed in Toowoomba",
+    name: "6.6kW System with FOX ESS 23.3kWh battery Pack",
+    title: "6.6kW System with FOX ESS 23.3kWh battery Pack",
   },
 
   {
     id: 24,
-    images: [
-      project_img_75,
-      project_img_76,
+    images: [   
+      project_img_64,
+      project_img_65,
+      project_img_66,
+      project_img_67,
     ],
-    name: "6.6kW System Installed in Victoria Point",
-    title: "6.6kW System Installed in Victoria Point",
+    name: "FOX ESS 41.93kWh Battery Pack Installed in Bahrs Scrub",
+    title: "FOX ESS 41.93kWh Battery Pack Installed in Bahrs Scrub",
   },
   {
     id: 25,
-    images: [
-      project_img_77,
-      project_img_78,
+    images: [      
+      project_img_68,
+      project_img_69,
+      project_img_70,
+      project_img_71,
+      project_img_72,
     ],
-    name: "13.2kW System Installed in Victoria Point",
-    title: "13.2kW System Installed in Victoria Point",
+    name: "6.6kW System with Sigenergy 24kWh Battery Pack",
+    title: "6.6kW System with Sigenergy 24kWh Battery Pack",
   },
   {
     id: 26,
     images: [
-      project_img_79,
-      project_img_80,
-      project_img_81,
+      project_img_73,
+      project_img_74,
+      project_img_75,
     ],
-    name: "13.2kW System Installed in Victoria Point (GoodWe)",
-    title: "13.2kW System Installed in Victoria Point (GoodWe)",
+    name: "8.8kW System with FOX ESS 41.93kWh Battery Pack in Loganlea",
+    title: "8.8kW System with FOX ESS 41.93kWh Battery Pack in Loganlea",
   },
   {
     id: 27,
     images: [
-      project_img_82,
-      project_img_83,
-      project_img_84,
-      project_img_85,
-      project_img_86,
+      project_img_76,
+      project_img_77,
     ],
-    name: "6.6kW System Installed in Waterford West",
-    title: "6.6kW System Installed in Waterford West",
+    name: "FOX ESS 41.93kWh Battery Pack Installed in Pallara",
+    title: "FOX ESS 41.93kWh Battery Pack Installed in Pallara",
   },
   {
     id: 28,
     images: [
-      project_img_87,
-      project_img_88,
+      project_img_78,
+      project_img_79,
+      project_img_80,
+      project_img_81,
+      project_img_82,
+      project_img_83,
     ],
-    name: "5kW System Installed in West Ipswich",
-    title: "5kW System Installed in West Ipswich",
+    name: "FOX ESS 47.92kWh Battery Pack Installed in Greenbank",
+    title: "FOX ESS 47.92kWh Battery Pack Installed in Greenbank",
   },
 
   {
     id: 29,
     images: [
+      project_img_84,
+      project_img_85,
+      project_img_86,
+      project_img_87,
+    ],
+    name: "FOX ESS 32.61kWh Battery Pack Installed in Anstead",
+    title: "FOX ESS 32.61kWh Battery Pack Installed in Anstead",
+  },
+
+  {
+    id: 30,
+    images: [
+      project_img_88,
       project_img_89,
       project_img_90,
     ],
-    name: "6.6kW System Installed in Yarrabilba",
-    title: "6.6kW System Installed in Yarrabilba",
+    name: "FOX ESS 47.92kWh Battery Pack Installed in Pallara",
+    title: "FOX ESS 47.92kWh Battery Pack Installed in Pallara",
   },
-
 
 ];
 export default battery_data;
