@@ -10,7 +10,6 @@ const PanelsArea = () => {
   return (
     <section className="battery-area pt-100 pb-100">
       <div className="container">
-
         {/* Section Heading */}
         <div className="row">
           <div className="col-lg-12">
@@ -24,7 +23,6 @@ const PanelsArea = () => {
         <div className="battery-card-wrapper">
           {panels_data.map((item) => (
             <div className="battery-card" key={item.id}>
-
               {/* LEFT - IMAGE */}
               <div className="battery-card-logo">
                 <Image
@@ -42,19 +40,31 @@ const PanelsArea = () => {
 
                 <p>{item.description}</p>
 
-                <Link
-                  href={item.link}
-                  className="battery-read-more"
-                >
-                  Read More
-                  <span>→</span>
-                </Link>
+                {/* MANUAL BUTTONS */}
+                <div className="panel-buttons">
+                  {item.buttons.map((button, index) => (
+                    <Link
+                      key={index}
+                      href={button.link}
+                      className="battery-read-more"
+                      target={
+                        button.link.endsWith(".pdf") ? "_blank" : undefined
+                      }
+                      rel={
+                        button.link.endsWith(".pdf")
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
+                    >
+                      {button.text}
+                      <span>→</span>
+                    </Link>
+                  ))}
+                </div>
               </div>
-
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
