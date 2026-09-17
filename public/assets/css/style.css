@@ -489,7 +489,7 @@ a.handbag:before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 800px !important;
     position: relative;
 }
 
@@ -5080,3 +5080,4 @@ a.battery-read-more {
 .battery-card-logo {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
+

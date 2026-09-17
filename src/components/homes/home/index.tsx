@@ -10,7 +10,7 @@ import VedioAreaHomeOne from './VedioAreaHomeOne';
 import ContactAreaHomeOne from './ContactAreaHomeOne';
 import ProtfolioAreaHomeOne from './ProtfolioAreaHomeOne';
 import OfferAreaHomeOne from './OfferAreaHomeOne';
-import TeamAreaHomeOne from './TeamAreaHomeOne';
+import SolarEnergyHomeOne from './SolarEnergyHomeOne';
 import AppointmentAreaHomeOne from './AppointmentAreaHomeOne';
 import BlogAreaHomeOne from './BlogAreaHomeOne';
 import SubscribeAreaHomeOne from './SubscribeAreaHomeOne';
@@ -25,13 +25,13 @@ const HomeOne = () => {
         <HeroAreaHomeOne />
         <AboutAreaHomeOne />
         <ServiceAreaHomeOne />
+        <SolarEnergyHomeOne />
         <CtaAreaHomeOne />
         <PricingAreaHomeOne />
         <VedioAreaHomeOne />
         <ContactAreaHomeOne />
         <ProtfolioAreaHomeOne />
         <OfferAreaHomeOne />
-        <TeamAreaHomeOne />
         <AppointmentAreaHomeOne />
         <BlogAreaHomeOne />
         <SubscribeAreaHomeOne />
