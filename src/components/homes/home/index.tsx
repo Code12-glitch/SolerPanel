@@ -16,6 +16,9 @@ import BlogAreaHomeOne from './BlogAreaHomeOne';
 import SubscribeAreaHomeOne from './SubscribeAreaHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne'; 
 import SolarProcessHomeOne from './SolarProcessHomeOne';
+import FinanceQuoteHomeOne from "@/components/homes/home/FinanceQuoteHomeOne";
+import SolarPackagesArea from "./SolarPackagesArea";
+import SolarBrandsArea from "./SolarBrandsArea";
 
 const HomeOne = () => {
   
@@ -28,10 +31,12 @@ const HomeOne = () => {
         <ServiceAreaHomeOne />
         <SolarEnergyHomeOne />
         <SolarProcessHomeOne />
-        <CtaAreaHomeOne />
-        <PricingAreaHomeOne />
-        <VedioAreaHomeOne />
+        <FinanceQuoteHomeOne />
         <ContactAreaHomeOne />
+        <SolarPackagesArea />
+        <SolarBrandsArea />
+        <CtaAreaHomeOne />
+        <VedioAreaHomeOne />
         <ProtfolioAreaHomeOne />
         <OfferAreaHomeOne />
         <AppointmentAreaHomeOne />

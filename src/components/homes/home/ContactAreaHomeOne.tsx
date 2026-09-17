@@ -28,7 +28,7 @@ const ContactAreaHomeOne = () => {
   return (
     <>
       <div className="choose-us-section">
-        <div className="container">
+        <div className="container mt-70">
           <div className="row choose">
             <div className="col-lg-6 col-md-12">
               <div className="section-title wow animate__slideInUp">

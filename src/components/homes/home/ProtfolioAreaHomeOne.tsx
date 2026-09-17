@@ -24,18 +24,11 @@ const protfolio_content: DataType = {
   portfolio_data: [
     {
       id: 1,
-      title_1: "Business Task Management", 
-      title_2: "Dashboard Design", 
+      title_1: "Grid Connected Systems", 
     },
     {
       id: 2,
-      title_1: "Dashboard Design", 
-      title_2: "Business Task Management", 
-    },
-    {
-      id: 3,
-      title_1: "Business Task Management", 
-      title_2: "Dashboard Design", 
+      title_1: "Battery Systems", 
     }
   ]
 }
@@ -60,7 +53,7 @@ const ProtfolioAreaHomeOne = () => {
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="solar-btn protfolio">
-                <Link href="/project-details">All  Projects <i className="bi bi-arrow-right"></i></Link>
+                <Link href="/grid-connected-system">All  Projects <i className="bi bi-arrow-right"></i></Link>
               </div>
             </div>
           </div>
@@ -78,8 +71,8 @@ const ProtfolioAreaHomeOne = () => {
                     <span>0{item.id}</span>
                   </div>
                   <div className="protfolio-item-title">
-                    <h3><Link href="/project-details">{item.title_1}</Link></h3> 
-                    <h3><Link href="/project-details">{item.title_2}</Link></h3>  
+                    <h3><Link href="/grid-connected-system">{item.title_1}</Link></h3> 
+                    <h3><Link href="/battery-systems">{item.title_2}</Link></h3>  
                   </div>
                 </div>
                 <div className="protfolio-itme-hover">

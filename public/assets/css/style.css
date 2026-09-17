@@ -5327,3 +5327,393 @@ a.battery-read-more {
     font-size: 32px;
   }
 }
+/* =========================================
+   Finance Partners + Get Quote
+========================================= */
+
+.finance-quote-section {
+  padding: 70px 0;
+  background: #f7f7f7;
+}
+
+.finance-partners-content {
+  padding-right: 40px;
+}
+
+.finance-partners-content .section-title {
+  margin-bottom: 30px;
+}
+
+.finance-partners-content .section-title h2 {
+  margin-bottom: 15px;
+}
+
+.finance-partners-content .section-title p {
+  max-width: 700px;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.finance-partners-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.finance-partner-logo {
+  background: #fff;
+  padding: 15px 25px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finance-partner-logo img {
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.finance-quote-button {
+  padding: 40px 35px;
+  background: #fff;
+  text-align: center;
+}
+
+.finance-quote-button h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.finance-quote-button p {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.get-quote-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background: red;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.get-quote-btn i {
+  font-size: 16px;
+}
+
+.get-quote-btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .finance-partners-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .finance-quote-button {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .finance-quote-section {
+    padding: 50px 0;
+  }
+
+  .finance-partners-logos {
+    justify-content: center;
+  }
+
+  .finance-quote-button {
+    padding: 30px 20px;
+  }
+
+  .finance-quote-button h3 {
+    font-size: 24px;
+  }
+}
+/* ==========================================
+   Solar Packages
+========================================== */
+
+.solar-packages-area {
+  padding: 90px 0;
+  background: #f7f7f7;
+}
+
+.solar-packages-area .section-title {
+  margin-bottom: 50px;
+}
+
+.solar-packages-area .section-title .sub-title {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: red;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.solar-packages-area .section-title h2 {
+  margin-bottom: 15px;
+  font-size: 42px;
+}
+
+.solar-packages-area .section-title p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Card */
+
+.solar-package-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 35px 25px 30px;
+  transition: all 0.35s ease;
+}
+
+.solar-package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+/* Top */
+
+.solar-package-top {
+  text-align: center;
+}
+
+.solar-package-top > span {
+  display: block;
+  margin-bottom: 10px;
+  color: red;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.solar-package-top h3 {
+  margin-bottom: 15px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.solar-package-line {
+  width: 50px;
+  height: 2px;
+  margin: 0 auto 18px;
+  background: red;
+}
+
+.solar-package-top h4 {
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+
+/* Body */
+
+.solar-package-body {
+  flex: 1;
+}
+
+.solar-package-body p {
+  margin-bottom: 22px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.solar-package-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.solar-package-body ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.solar-package-body ul li i {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: red;
+  font-size: 17px;
+}
+
+/* Footer */
+
+.solar-package-footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.solar-package-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  padding: 14px 15px;
+  background: red;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.solar-package-btn:hover {
+  background: #222;
+  color: #ffffff;
+}
+
+.solar-package-btn i {
+  font-size: 15px;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .solar-packages-area {
+    padding: 70px 0;
+  }
+
+  .solar-packages-area .section-title h2 {
+    font-size: 36px;
+  }
+
+  .solar-package-card {
+    margin-bottom: 30px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 575px) {
+  .solar-packages-area {
+    padding: 60px 0;
+  }
+
+  .solar-packages-area .section-title {
+    margin-bottom: 35px;
+  }
+
+  .solar-packages-area .section-title h2 {
+    font-size: 30px;
+  }
+
+  .solar-package-card {
+    padding: 30px 20px 25px;
+  }
+
+  .solar-package-top h3 {
+    font-size: 34px;
+  }
+}
+.solar-brands-area {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.solar-brands-area .section-title {
+  margin-bottom: 45px;
+}
+
+.solar-brands-area .section-title .sub-title {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: red;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.solar-brands-area .section-title h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.solar-brands-area .section-title p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #666;
+  line-height: 1.7;
+}
+
+.solar-brands-slider {
+  padding: 10px 0;
+}
+
+.solar-brand-item {
+  height: 130px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.solar-brand-item:hover {
+  transform: translateY(-5px);
+  border-color: #dddddd;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.solar-brand-item img {
+  width: 100%;
+  height: 80px;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .solar-brands-area {
+    padding: 70px 0;
+  }
+
+  .solar-brands-area .section-title h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 575px) {
+  .solar-brands-area {
+    padding: 60px 0;
+  }
+
+  .solar-brands-area .section-title h2 {
+    font-size: 30px;
+  }
+
+  .solar-brand-item {
+    height: 110px;
+  }
+}
