@@ -27,13 +27,13 @@ const BatterySystemsArea = () => {
         return;
       }
 
-      $(".project-image-carousel").each(function () {
-        const carousel = $(this);
+      $(".project-image-carousel").each(function (this: HTMLElement) {
+  const carousel = $(this);
 
-        // Destroy existing carousel before reinitializing
-        if (carousel.hasClass("owl-loaded")) {
-          carousel.trigger("destroy.owl.carousel");
-        }
+  if (carousel.hasClass("owl-loaded")) {
+    carousel.trigger("destroy.owl.carousel");
+  }
+});
 
         carousel.owlCarousel({
           items: 1,
@@ -76,7 +76,6 @@ const BatterySystemsArea = () => {
   return (
     <section className="project-grid-section">
       <div className="container">
-
         {/* Section Title */}
         <div className="row">
           <div className="col-lg-12">
@@ -94,10 +93,7 @@ const BatterySystemsArea = () => {
               : [item.images];
 
             return (
-              <div
-                key={item.id}
-                className="project-grid-box"
-              >
+              <div key={item.id} className="project-grid-box">
                 {/* Battery Images */}
                 <div className="project-thumb">
                   <div className="owl-carousel owl-theme project-image-carousel">
@@ -139,7 +135,6 @@ const BatterySystemsArea = () => {
             </button>
           </div>
         )}
-
       </div>
     </section>
   );
