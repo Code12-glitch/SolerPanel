@@ -28,13 +28,15 @@ const GridSystemsArea = () => {
       }
 
       $(".project-image-carousel").each(function (this: HTMLElement) {
-  const carousel = $(this);
+        const carousel = $(this);
 
-  if (carousel.hasClass("owl-loaded")) {
-    carousel.trigger("destroy.owl.carousel");
-  }
-});
+        // Destroy existing Owl Carousel instance
+        if (carousel.hasClass("owl-loaded")) {
+          carousel.trigger("destroy.owl.carousel");
+          carousel.removeClass("owl-loaded");
+        }
 
+        // Initialize Owl Carousel
         carousel.owlCarousel({
           items: 1,
           loop: true,
@@ -54,6 +56,7 @@ const GridSystemsArea = () => {
       });
     };
 
+    // Give jQuery/Owl Carousel time to load
     const timer = setTimeout(initializeCarousel, 100);
 
     return () => {
@@ -65,7 +68,7 @@ const GridSystemsArea = () => {
         return;
       }
 
-      $(".project-image-carousel").each(function () {
+      $(".project-image-carousel").each(function (this: HTMLElement) {
         const carousel = $(this);
 
         if (carousel.hasClass("owl-loaded")) {
