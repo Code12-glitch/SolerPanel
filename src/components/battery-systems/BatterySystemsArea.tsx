@@ -63,7 +63,7 @@ const BatterySystemsArea = () => {
         return;
       }
 
-      $(".project-image-carousel").each(function () {
+      $(".project-image-carousel").each(function (this: HTMLElement) {
         const carousel = $(this);
 
         if (carousel.hasClass("owl-loaded")) {
