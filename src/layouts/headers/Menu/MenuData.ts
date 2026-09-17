@@ -48,8 +48,8 @@ const menu_data: DataType[] = [
 		link: "/products",
 		has_dropdown: true,
 		sub_menus: [
-			{ link: "/product-details/panels", title: "Panels" },
-			{ link: "/product-details/inverters", title: "Inverters" },
+			{ link: "/panels", title: "Panels" },
+			{ link: "/inverters", title: "Inverters" },
 		],
 	},
 	{

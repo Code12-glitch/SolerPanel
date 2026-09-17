@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import panels_data from "@/data/PanelsData";
+import inverters_data from "@/data/InverterData";
 
-const PanelsArea = () => {
+const InvertersArea = () => {
   return (
     <section className="battery-area pt-100 pb-100">
       <div className="container">
@@ -14,16 +14,15 @@ const PanelsArea = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title text-center mb-50">
-              <h2>Solar Panels</h2>
+              <h2>Inverter Brands</h2>
             </div>
           </div>
         </div>
 
-        {/* Panel Cards */}
+        {/* Inverter Cards */}
         <div className="battery-card-wrapper">
-          {panels_data.map((item) => (
+          {inverters_data.map((item) => (
             <div className="battery-card" key={item.id}>
-              
               {/* LEFT - IMAGE */}
               <div className="battery-card-logo">
                 <Image
@@ -41,7 +40,7 @@ const PanelsArea = () => {
 
                 <p>{item.description}</p>
 
-                {/* BUTTONS - ONLY SHOW IF BUTTONS EXIST */}
+                {/* BUTTONS - OPTIONAL */}
                 {item.buttons && item.buttons.length > 0 && (
                   <div className="panel-buttons">
                     {item.buttons.map((button, index) => (
@@ -75,4 +74,4 @@ const PanelsArea = () => {
   );
 };
 
-export default PanelsArea;
+export default InvertersArea;
