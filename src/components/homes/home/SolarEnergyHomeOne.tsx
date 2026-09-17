@@ -124,12 +124,14 @@ const SolarEnergyHomeOne = ({ style = false }: { style?: boolean }) => {
                         </div>
 
                         {/* Feature List */}
-                        {/* Feature List */}
                         <div className="about-content-discription wow slideInLeft">
                           <div className="blog-details-list">
                             <ul>
                               {item.feature_list.map((feature, i) => (
-                                <li key={i}>{feature}</li>
+                                <li key={i}>
+                                  <i className="bi bi-check2-circle"></i>
+                                  <span>{feature}</span>
+                                </li>
                               ))}
                             </ul>
                           </div>
