@@ -5080,4 +5080,250 @@ a.battery-read-more {
 .battery-card-logo {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
+/* =========================================
+   Solar PV Process Timeline
+========================================= */
 
+.solar-process-section {
+  padding: 80px 0;
+  background-color:#ededed;
+}
+
+.solar-process-section .section-title {
+  margin-bottom: 60px;
+}
+
+.solar-process-section .section-title h2 {
+  margin-bottom: 15px;
+}
+
+.solar-process-section .section-title p {
+  margin-bottom: 0;
+}
+
+/* Timeline */
+
+.solar-process-timeline {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Individual Step */
+
+.solar-process-step {
+  position: relative;
+  width: 25%;
+  text-align: center;
+}
+
+/* Number */
+
+.solar-process-number {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.solar-process-number span {
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+}
+
+/* Connecting Line */
+
+.solar-process-line {
+  position: absolute;
+  top: 35px;
+  left: calc(50% + 35px);
+  width: calc(100% - 70px + 30px);
+  height: 2px;
+  background: red;
+  z-index: 1;
+}
+
+/* Icon */
+
+.solar-process-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solar-process-icon i {
+  font-size: 26px;
+  color: red;
+}
+
+/* Content */
+
+.solar-process-content {
+  padding: 0 10px;
+}
+
+.solar-process-step-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: red;
+  margin-bottom: 5px;
+}
+
+.solar-process-content h4 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.solar-process-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* =========================================
+   Tablet
+========================================= */
+
+@media (max-width: 991px) {
+  .solar-process-timeline {
+    flex-wrap: wrap;
+  }
+
+  .solar-process-step {
+    width: 50%;
+  }
+
+  .solar-process-line {
+    display: none;
+  }
+}
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 575px) {
+  .solar-process-section {
+    padding: 60px 0;
+  }
+
+  .solar-process-timeline {
+    display: block;
+  }
+
+  .solar-process-step {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .solar-process-step:last-child {
+    margin-bottom: 0;
+  }
+}
+.get-quote-area {
+  padding: 80px 0;
+}
+
+.get-quote-wrapper {
+  width: 100%;
+}
+
+.get-quote-wrapper .section-title {
+  margin-bottom: 45px;
+}
+
+.get-quote-wrapper .section-title h2 {
+  margin-bottom: 0;
+  font-size: 40px;
+}
+
+.get-quote-form {
+  width: 100%;
+}
+
+.get-quote-form .form-group {
+  margin-bottom: 25px;
+}
+
+.get-quote-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.get-quote-form label span {
+  color: red;
+  margin-left: 3px;
+}
+
+.get-quote-form input,
+.get-quote-form textarea {
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  outline: none;
+  background: #fff;
+  padding: 14px 18px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.get-quote-form input {
+  height: 55px;
+}
+
+.get-quote-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.get-quote-form input:focus,
+.get-quote-form textarea:focus {
+  border-color: red;
+}
+
+.quote-submit-btn {
+  border: 0;
+  outline: none;
+  background: red;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quote-submit-btn i {
+  margin-left: 10px;
+}
+
+.quote-submit-btn:hover {
+  background: #222;
+}
+
+@media (max-width: 767px) {
+  .get-quote-area {
+    padding: 60px 0;
+  }
+
+  .get-quote-wrapper .section-title h2 {
+    font-size: 32px;
+  }
+}

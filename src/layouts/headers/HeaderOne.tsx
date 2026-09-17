@@ -83,7 +83,7 @@ const HeaderOne = ({ style }: any) => {
                   </ul>
                 </div>
                 <div className="solar-btn">
-                  <Link href="/contact">Get A Quote <i className="bi bi-arrow-right"></i></Link>
+                  <Link href="/get-quote">Get A Quote <i className="bi bi-arrow-right"></i></Link>
                 </div>
               </div>
             </div>

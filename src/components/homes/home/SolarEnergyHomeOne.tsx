@@ -15,7 +15,7 @@ interface DataType {
 
 const tab_data: DataType[] = [
   {
-    tab_id: "solar-energy",
+    tab_id: "",
     tab_name: "",
     sm_info:
       "Solar energy is a clean, renewable power source harnessed from the sun. It’s environmentally friendly, producing no harmful emissions of pollutants.",

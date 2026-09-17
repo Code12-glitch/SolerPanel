@@ -12,7 +12,7 @@ const CtaAreaHomeOne = () => {
   return (
     <>
       <div className="contact-us-section">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row contact-us align-items-center">
             <div className="col-lg-2"></div>
             <div className="col-lg-7 col-md-6">
