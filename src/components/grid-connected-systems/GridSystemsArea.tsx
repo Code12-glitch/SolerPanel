@@ -27,13 +27,13 @@ const GridSystemsArea = () => {
         return;
       }
 
-      $(".project-image-carousel").each(function () {
-        const carousel = $(this);
+      $(".project-image-carousel").each(function (this: HTMLElement) {
+  const carousel = $(this);
 
-        // Prevent duplicate Owl Carousel initialization
-        if (carousel.hasClass("owl-loaded")) {
-          carousel.trigger("destroy.owl.carousel");
-        }
+  if (carousel.hasClass("owl-loaded")) {
+    carousel.trigger("destroy.owl.carousel");
+  }
+});
 
         carousel.owlCarousel({
           items: 1,
@@ -78,14 +78,11 @@ const GridSystemsArea = () => {
   return (
     <section className="project-grid-section">
       <div className="container">
-
         {/* Section Title */}
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title text-center">
-              <h2>
-                Grid Connected Systems
-              </h2>
+              <h2>Grid Connected Systems</h2>
             </div>
           </div>
         </div>
@@ -98,10 +95,7 @@ const GridSystemsArea = () => {
               : [item.images];
 
             return (
-              <div
-                key={item.id}
-                className="project-grid-box"
-              >
+              <div key={item.id} className="project-grid-box">
                 {/* Project Images */}
                 <div className="project-thumb">
                   <div className="owl-carousel owl-theme project-image-carousel">
@@ -143,7 +137,6 @@ const GridSystemsArea = () => {
             </button>
           </div>
         )}
-
       </div>
     </section>
   );

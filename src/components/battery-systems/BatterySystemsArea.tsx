@@ -13,65 +13,66 @@ const BatterySystemsArea = () => {
     setNext((value) => value + 3);
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const $ = (window as any).jQuery;
+useEffect(() => {
+  const timer = setTimeout(() => {
+    const $ = (window as any).jQuery;
 
-      if (!$) {
-        console.error("jQuery is not loaded.");
-        return;
+    if (!$) {
+      console.error("jQuery is not loaded.");
+      return;
+    }
+
+    if (!$.fn || !$.fn.owlCarousel) {
+      console.error("Owl Carousel is not loaded.");
+      return;
+    }
+
+    $(".project-image-carousel").each(function (this: HTMLElement) {
+      const carousel = $(this);
+
+      // Destroy existing carousel before reinitializing
+      if (carousel.hasClass("owl-loaded")) {
+        carousel.trigger("destroy.owl.carousel");
       }
 
-      if (!$.fn || !$.fn.owlCarousel) {
-        console.error("Owl Carousel is not loaded.");
-        return;
-      }
+      // Initialize Owl Carousel
+      carousel.owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        smartSpeed: 600,
 
-      $(".project-image-carousel").each(function (this: HTMLElement) {
-  const carousel = $(this);
-
-  if (carousel.hasClass("owl-loaded")) {
-    carousel.trigger("destroy.owl.carousel");
-  }
-});
-
-        carousel.owlCarousel({
-          items: 1,
-          loop: true,
-          margin: 0,
-          nav: true,
-          dots: true,
-          autoplay: true,
-          autoplayTimeout: 4000,
-          autoplayHoverPause: true,
-          smartSpeed: 600,
-
-          navText: [
-            '<span class="owl-prev-arrow">&#10094;</span>',
-            '<span class="owl-next-arrow">&#10095;</span>',
-          ],
-        });
+        navText: [
+          '<span class="owl-prev-arrow">&#10094;</span>',
+          '<span class="owl-next-arrow">&#10095;</span>',
+        ],
       });
-    }, 100);
+    });
+  }, 100);
 
-    return () => {
-      clearTimeout(timer);
+  return () => {
+    clearTimeout(timer);
 
-      const $ = (window as any).jQuery;
+    const $ = (window as any).jQuery;
 
-      if (!$ || !$.fn || !$.fn.owlCarousel) {
-        return;
+    if (!$ || !$.fn || !$.fn.owlCarousel) {
+      return;
+    }
+
+    $(".project-image-carousel").each(function (this: HTMLElement) {
+      const carousel = $(this);
+
+      if (carousel.hasClass("owl-loaded")) {
+        carousel.trigger("destroy.owl.carousel");
       }
-
-      $(".project-image-carousel").each(function (this: HTMLElement) {
-        const carousel = $(this);
-
-        if (carousel.hasClass("owl-loaded")) {
-          carousel.trigger("destroy.owl.carousel");
-        }
-      });
-    };
-  }, [next]);
+    });
+  };
+}, [next]);
 
   return (
     <section className="project-grid-section">
