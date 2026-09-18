@@ -145,9 +145,9 @@ ul {
 
 input:focus,
 button:focus {
-    border-color: #FF3C00;
-    outline-color: #FF3C00;
-    border: 1px solid #FF3C00;
+    border-color: #fac012;
+    outline-color: #fac012;
+    border: 1px solid #fac012;
 }
 
 textarea:focus {
