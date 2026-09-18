@@ -2842,6 +2842,7 @@ span.fill {
 
 .bratcome-text ul {
     list-style: none;
+    margin-bottom: 0rem !important;
 }
 
 .bratcome-text ul li {
