@@ -717,7 +717,7 @@ a.handbag:before {
     color: #fff;
     background-color: #fff;
     padding: 0px 25px 11px;
-    border: 2px solid #f00;
+    border: 2px solid #fac012;
     border-radius: 3px;
     width: 325px;
     height: 125px;
@@ -1761,7 +1761,7 @@ a.active {
 }
 
 .form_error {
-    color: red;
+    color: #fac012;
 }
 
 .form_box input::placeholder {
@@ -5126,7 +5126,7 @@ a.battery-read-more {
   margin: 0 auto 25px;
   border-radius: 50%;
   background: #ffffff;
-  border: 2px solid red;
+  border: 2px solid #fac012;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5137,7 +5137,7 @@ a.battery-read-more {
 .solar-process-number span {
   font-size: 20px;
   font-weight: 700;
-  color: red;
+  color: #fac012;
 }
 
 /* Connecting Line */
@@ -5148,7 +5148,7 @@ a.battery-read-more {
   left: calc(50% + 35px);
   width: calc(100% - 70px + 30px);
   height: 2px;
-  background: red;
+  background: #fac012;
   z-index: 1;
 }
 
@@ -5167,7 +5167,7 @@ a.battery-read-more {
 
 .solar-process-icon i {
   font-size: 26px;
-  color: red;
+  color: #fac012;
 }
 
 /* Content */
@@ -5181,7 +5181,7 @@ a.battery-read-more {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: red;
+  color: #fac012;
   margin-bottom: 5px;
 }
 
@@ -5269,7 +5269,7 @@ a.battery-read-more {
 }
 
 .get-quote-form label span {
-  color: red;
+  color: #fac012;
   margin-left: 3px;
 }
 
@@ -5295,13 +5295,13 @@ a.battery-read-more {
 
 .get-quote-form input:focus,
 .get-quote-form textarea:focus {
-  border-color: red;
+  border-color: #fac012;
 }
 
 .quote-submit-btn {
   border: 0;
   outline: none;
-  background: red;
+  background: #fac012;
   color: #fff;
   padding: 15px 30px;
   font-size: 15px;
@@ -5397,7 +5397,7 @@ a.battery-read-more {
   align-items: center;
   gap: 10px;
   padding: 15px 30px;
-  background: red;
+  background: #fac012;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
@@ -5459,7 +5459,7 @@ a.battery-read-more {
 .solar-packages-area .section-title .sub-title {
   display: inline-block;
   margin-bottom: 10px;
-  color: red;
+  color: #fac012;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -5503,7 +5503,7 @@ a.battery-read-more {
 .solar-package-top > span {
   display: block;
   margin-bottom: 10px;
-  color: red;
+  color: #fac012;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -5520,7 +5520,7 @@ a.battery-read-more {
   width: 50px;
   height: 2px;
   margin: 0 auto 18px;
-  background: red;
+  background: #fac012;
 }
 
 .solar-package-top h4 {
@@ -5561,7 +5561,7 @@ a.battery-read-more {
 .solar-package-body ul li i {
   flex-shrink: 0;
   margin-top: 2px;
-  color: red;
+  color: #fac012;
   font-size: 17px;
 }
 
@@ -5579,7 +5579,7 @@ a.battery-read-more {
   gap: 9px;
   width: 100%;
   padding: 14px 15px;
-  background: red;
+  background: #fac012;
   color: #ffffff;
   font-size: 13px;
   font-weight: 600;
@@ -5648,7 +5648,7 @@ a.battery-read-more {
 .solar-brands-area .section-title .sub-title {
   display: inline-block;
   margin-bottom: 10px;
-  color: red;
+  color: #fac012;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -5730,7 +5730,7 @@ a.battery-read-more {
 .google-reviews-area .section-title .sub-title {
   display: inline-block;
   margin-bottom: 10px;
-  color: red;
+  color: #fac012;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -5932,9 +5932,9 @@ a.battery-read-more {
 
 .google-review-prev:hover,
 .google-review-next:hover {
-  background: red;
+  background: #fac012;
   color: #ffffff;
-  border-color: red;
+  border-color: #fac012;
 }
 
 
@@ -5951,7 +5951,7 @@ a.battery-read-more {
 
   padding: 14px 25px;
 
-  background: red;
+  background: #fac012;
   color: #ffffff;
 
   font-size: 13px;
@@ -6026,7 +6026,7 @@ a.battery-read-more {
 .faq-area .section-title .sub-title {
   display: inline-block;
   margin-bottom: 10px;
-  color: red;
+  color: #fac012;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -6065,7 +6065,7 @@ a.battery-read-more {
 }
 
 .faq-item.active {
-  border-color: red;
+  border-color: #fac012;
 }
 
 
@@ -6093,7 +6093,7 @@ a.battery-read-more {
 }
 
 .faq-question:hover {
-  color: red;
+  color: #fac012;
 }
 
 
@@ -6119,8 +6119,8 @@ a.battery-read-more {
 }
 
 .faq-item.active .faq-icon {
-  background: red;
-  border-color: red;
+  background: #fac012;
+  border-color: #fac012;
   color: #ffffff;
 }
 
