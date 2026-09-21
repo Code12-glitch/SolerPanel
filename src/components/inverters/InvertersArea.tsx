@@ -14,7 +14,7 @@ const InvertersArea = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title text-center mb-50">
-              <h2>Inverter Brands</h2>
+              {/* <h2>Inverter Brands</h2> */}
             </div>
           </div>
         </div>

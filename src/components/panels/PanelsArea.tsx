@@ -14,7 +14,7 @@ const PanelsArea = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title text-center mb-50">
-              <h2>Solar Panels</h2>
+              {/* <h2>Solar Panels</h2> */}
             </div>
           </div>
         </div>

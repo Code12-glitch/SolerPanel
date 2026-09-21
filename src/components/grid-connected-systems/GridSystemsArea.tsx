@@ -85,7 +85,7 @@ const GridSystemsArea = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title text-center">
-              <h2>Grid Connected Systems</h2>
+              {/* <h2>Grid Connected Systems</h2> */}
             </div>
           </div>
         </div>

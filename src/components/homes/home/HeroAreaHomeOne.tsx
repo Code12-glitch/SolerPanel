@@ -23,36 +23,36 @@ const hero_slider_data: DataType[] = [
     ),
     sm_des: "",
   },
-  {
-    id: 2,
-    subtitle: "Powering a Brighter Future",
-    title: (
-      <>
-        Secure Your Battery <br /> Rebate Today!
-      </>
-    ),
-    sm_des: "",
-  },
-  {
-    id: 3,
-    subtitle: "Powering a Brighter Future",
-    title: (
-      <>
-        Secure Your Battery <br /> Rebate Today!
-      </>
-    ),
-    sm_des: "",
-  },
-  {
-    id: 4,
-    subtitle: "Powering a Brighter Future",
-    title: (
-      <>
-        Secure Your Battery <br /> Rebate Today!
-      </>
-    ),
-    sm_des: "",
-  },
+  // {
+  //   id: 2,
+  //   subtitle: "Powering a Brighter Future",
+  //   title: (
+  //     <>
+  //       Secure Your Battery <br /> Rebate Today!
+  //     </>
+  //   ),
+  //   sm_des: "",
+  // },
+  // {
+  //   id: 3,
+  //   subtitle: "Powering a Brighter Future",
+  //   title: (
+  //     <>
+  //       Secure Your Battery <br /> Rebate Today!
+  //     </>
+  //   ),
+  //   sm_des: "",
+  // },
+  // {
+  //   id: 4,
+  //   subtitle: "Powering a Brighter Future",
+  //   title: (
+  //     <>
+  //       Secure Your Battery <br /> Rebate Today!
+  //     </>
+  //   ),
+  //   sm_des: "",
+  // },
 ];
 
 const HeroAreaHomeOne = () => {
