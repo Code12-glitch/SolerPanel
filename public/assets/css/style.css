@@ -2349,7 +2349,7 @@ span.fill {
 .blog-title h4 a {
   font-size: 24px;
   line-height: 34px;
-  text-decoration: underline;
+  text-decoration: none;
   color: #1c1632;
   font-weight: 500;
   transition: 0.5s;
