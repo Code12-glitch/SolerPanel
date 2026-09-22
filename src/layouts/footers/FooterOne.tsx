@@ -6,7 +6,7 @@ import {
   TeamSocialLinks,
 } from '@/components/common/SocialLinks';
 
-import footer_logo from "@/assets/images/resource/spa-logo-1.png";
+import footer_logo from "@/assets/images/resource/logo-ftr.jpg";
 import footer_thumb from "@/assets/images/resource/footer-thumb.png";
 
 const footer_content = {

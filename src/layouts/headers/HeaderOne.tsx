@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 //test git 
 
-import HeaderLogoTwo from "@/assets/images/spa-logo-1.png";
+import HeaderLogoTwo from "@/assets/images/logo.png";
 
-import HeaderLogo from "@/assets/images/spa-logo-1.png";
+import HeaderLogo from "@/assets/images/logo.png";
 import NavMenu from './Menu/NavMenu';
 import { TeamSocialLinks } from '@/components/common/SocialLinks';
 import UseSticky from '@/hooks/UseSticky';
