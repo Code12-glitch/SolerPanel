@@ -32,12 +32,12 @@ const BlogArea = () => {
                     <div className="blog-disctiption">
                       <p>{item.sm_des}</p>
                     </div>
-                    <div className="blog-bottom-shape style-two">
+                    {/* <div className="blog-bottom-shape style-two">
                       <Image src={blog_shape} alt="image-title" />
                     </div>
                     <div className="blog-bottom-title style-two">
                       <h5>{item.author}</h5>
-                    </div>
+                    </div> */}
                     <div className="blog-btn style-two">
                       <Link href="/blog">More Details <i className="bi bi-arrow-up-right"></i></Link>
                     </div>

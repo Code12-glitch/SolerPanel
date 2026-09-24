@@ -93,12 +93,12 @@ const BlogAreaHomeOne = () => {
                     <div className="blog-title">
                       <h4><Link href="/blog-details">{item.title}</Link></h4>
                     </div>
-                    <div className="blog-bottom-shape">
+                    {/* <div className="blog-bottom-shape">
                       <img src="assets/images/resource/blog-shape.png" alt="image-title" />
                     </div>
                     <div className="blog-bottom-title">
                       <h5>{item.author}</h5>
-                    </div>
+                    </div> */}
                     <div className="blog-btn">
                       <Link href="/blog">More Details <i className="bi bi-arrow-up-right"></i></Link>
                     </div>
