@@ -28,17 +28,17 @@ const offer_content: DataType = {
     {
       icon: offer_icon_1,
       title: "Battery Storage",
-      sm_des: "Solar PV, Battery Storage Heat Recovery",
+      sm_des: "Solar PV, Battery Storage",
     },
     {
       icon: offer_icon_2,
       title: "Energy Around",
-      sm_des: "Solar PV, Battery Storage Heat Recovery",
+      sm_des: "Solar PV, Battery Storage",
     },
     {
       icon: offer_icon_3,
       title: "Solar PV Systems",
-      sm_des: "Solar PV, Battery Storage Heat Recovery",
+      sm_des: "Solar PV, Battery Storage",
     }
 
   ]

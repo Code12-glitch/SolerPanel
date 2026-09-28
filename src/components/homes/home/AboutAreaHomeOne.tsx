@@ -78,7 +78,7 @@ const AboutAreaHomeOne = (style: any) => {
               <div className="wow slideInLeft">
                 <div className="about-thumb">
                   <Image src={about_thumb} style={{ height: "auto" }} alt="image-title" />
-                  <div className="about-counter">
+                  {/* <div className="about-counter">
                     <div className="about-counter-text">
                       <div className="about-numbar">
                         <h4 className="counter">29</h4>
@@ -88,14 +88,14 @@ const AboutAreaHomeOne = (style: any) => {
                         <h5>Years Exprience</h5>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="about-counter-two d-flex align-items-center ">
                     <div className="about-counter-img">
                       <Image src={about_shape} alt="image-title" />
                     </div>
                     <div className="about-number-two">
-                      <h4 className="counter">2900</h4>
-                      <span>+</span>
+                      <h4 className="counter">Many</h4>
+                      {/* <span>+</span> */}
                       <h5>Satisfied Clients</h5>
                     </div>
                   </div>

@@ -58,19 +58,19 @@ const HeaderOne = ({ style }: any) => {
       <header className={`solar-header-section ${style ? 'style-two' : ''} ${sticky ? 'sticky-nav' : ''}`} id="sticky-header">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-3 col-md-6">
+            <div className="col-xl-3 col-lg-2 col-md-6">
               <div className={`logo ${style ? 'style-two' : ''}`}>
                 <Link href="/">
                   {style ? <Image src={HeaderLogoTwo} alt="logo" /> : <Image src={HeaderLogo} alt="logo" />}
                 </Link>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6">
+            <div className="col-xl-6 col-lg-8 col-md-6">
               <div className="solar-menu">
                 <NavMenu />
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-xl-3 col-lg-2 col-md-6">
               <div className="solar-search-button">
                 <div className="solar-social-menu">
                  {/* <ul>

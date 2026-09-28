@@ -7,7 +7,8 @@ import {
 } from '@/components/common/SocialLinks';
 
 import footer_logo from "@/assets/images/resource/logo-ftr.jpg";
-import footer_thumb from "@/assets/images/resource/footer-thumb.png";
+import footer1 from "@/assets/images/resource/clean-energy-council-member.jpg";
+import footer2 from "@/assets/images/cec-member-logo.webp";
 
 const footer_content = {
   sm_info:
@@ -131,7 +132,7 @@ const FooterOne = () => {
               </div>
             </div>
 
-            {/* Industry Sectors */}
+            {/* Quick Links */}
             <div className="col-lg-3 col-md-6">
               <div className="footer-wiget wow animate__slideInDown">
 
@@ -207,20 +208,31 @@ const FooterOne = () => {
                   </ul>
                 </div>
 
-              </div>
-            </div>
+                {/* CEC Logos */}
+                <div className="footer-cec-logos">
 
-            {/* Footer Thumbnail */}
-            {/*
-            <div className="col-lg-3">
-              <div className="footer-thumb wow animate__slideInDown">
-                <Image
-                  src={footer_thumb}
-                  alt="image-title"
-                />
+                  <div className="footer-cec-logo">
+                    <Image
+                      src={footer1}
+                      alt="Clean Energy Council Member"
+                      width={150}
+                      height={70}
+                    />
+                  </div>
+
+                  <div className="footer-cec-logo">
+                    <Image
+                      src={footer2}
+                      alt="Clean Energy Council Member"
+                      width={150}
+                      height={70}
+                    />
+                  </div>
+
+                </div>
+
               </div>
             </div>
-            */}
 
           </div>
 
@@ -236,10 +248,9 @@ const FooterOne = () => {
               </div>
             </div>
 
-            {/* <div className="col-lg-2"></div> */}
-
             {/* Privacy / Terms / Legal */}
-            {/* <div className="col-lg-4 col-md-6">
+            {/*
+            <div className="col-lg-4 col-md-6">
               <div className="footer-condition wow animate__slideInDown">
                 <ul>
                   {bootom_links.map((item, i) => (
@@ -251,11 +262,13 @@ const FooterOne = () => {
                   ))}
                 </ul>
               </div>
-            </div> */}
+            </div>
+            */}
 
             <div className="col-lg-3"></div>
 
           </div>
+
         </div>
       </footer>
     </>
