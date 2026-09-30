@@ -17,3 +17,255 @@
 @import "../../public/assets/css/meanmenu.min.css";
 @import "../../public/assets/css/style.css";
 @import "../../public/assets/css/responsive.css";
+
+/* ==========================================
+   PROJECT IMAGE SLIDER ARROWS
+========================================== */
+
+.project-image-carousel {
+  position: relative;
+}
+
+.project-image-carousel .owl-nav {
+  margin: 0;
+}
+
+.project-image-carousel .owl-prev,
+.project-image-carousel .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  margin: 0 !important;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.project-image-carousel .owl-prev {
+  left: 15px;
+}
+
+.project-image-carousel .owl-next {
+  right: 15px;
+}
+
+.project-image-carousel .owl-prev:hover,
+.project-image-carousel .owl-next:hover {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.owl-prev-arrow,
+.owl-next-arrow {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+}
+
+
+/* ==========================================
+   LIGHTBOX OVERLAY
+========================================== */
+
+.project-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.92);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 80px;
+}
+
+
+/* ==========================================
+   LIGHTBOX IMAGE CONTAINER
+========================================== */
+
+.project-lightbox-content {
+  position: relative;
+
+  width: min(1200px, 88vw);
+  height: min(800px, 85vh);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ==========================================
+   LIGHTBOX IMAGE
+========================================== */
+
+.project-lightbox-image {
+  object-fit: contain !important;
+}
+
+
+/* ==========================================
+   CLOSE BUTTON
+========================================== */
+
+.project-lightbox-close {
+  position: absolute;
+
+  top: 20px;
+  right: 25px;
+
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  color: #fff;
+
+  font-size: 36px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 100001;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.project-lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* ==========================================
+   LIGHTBOX PREVIOUS / NEXT
+========================================== */
+
+.project-lightbox-prev,
+.project-lightbox-next {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  color: #fff;
+
+  font-size: 32px;
+
+  cursor: pointer;
+
+  z-index: 100001;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.project-lightbox-prev {
+  left: 25px;
+}
+
+.project-lightbox-next {
+  right: 25px;
+}
+
+.project-lightbox-prev:hover,
+.project-lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+
+/* ==========================================
+   COUNTER
+========================================== */
+
+.project-lightbox-counter {
+  position: absolute;
+
+  bottom: 20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  padding: 7px 15px;
+
+  border-radius: 20px;
+
+  z-index: 100001;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
+  .project-lightbox {
+    padding: 40px 15px;
+  }
+
+  .project-lightbox-content {
+    width: 92vw;
+    height: 75vh;
+  }
+
+  .project-lightbox-prev,
+  .project-lightbox-next {
+    width: 42px;
+    height: 42px;
+
+    font-size: 24px;
+  }
+
+  .project-lightbox-prev {
+    left: 8px;
+  }
+
+  .project-lightbox-next {
+    right: 8px;
+  }
+
+  .project-lightbox-close {
+    top: 10px;
+    right: 10px;
+
+    width: 42px;
+    height: 42px;
+
+    font-size: 30px;
+  }
+
+}
