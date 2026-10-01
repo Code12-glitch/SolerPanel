@@ -82,7 +82,7 @@ const menu_data: DataType[] = [
 	{
 		id: 7,
 		title: "Blog",
-		link: "/blog",
+		link: "https://blog.solpoweraustralia.com.au/",
 		has_dropdown: false,
 	},
 	{

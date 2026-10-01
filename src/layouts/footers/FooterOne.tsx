@@ -24,31 +24,31 @@ const footer_content = {
     },
     {
       title: "About Us",
-      link: "#",
+      link: "/about",
     },
     {
       title: "Services",
-      link: "#",
+      link: "/service",
     },
     {
       title: "Product",
-      link: "#",
+      link: "/products",
     },
     {
       title: "Battery",
-      link: "#",
+      link: "/battery",
     },
     {
       title: "Our Projects",
-      link: "#",
+      link: "/grid-connected-system",
     },
     {
       title: "Blog",
-      link: "#",
+      link: "https://blog.solpoweraustralia.com.au/",
     },
     {
       title: "Contact",
-      link: "#",
+      link: "/contact",
     },
   ],
 
