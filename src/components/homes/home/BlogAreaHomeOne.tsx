@@ -1,112 +1,216 @@
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-import blog_thumb_1 from "@/assets/images/resource/blog1.png";
-import blog_thumb_2 from "@/assets/images/resource/blog2.png";
-import blog_thumb_3 from "@/assets/images/resource/blog3.png";
-
-interface DataType  {
-  subtitle: string;
-  title: string;
-  blog_data: {
-      id: number;
-      thumb: StaticImageData;
-      date: string;
-      title: string;
-      author: string;
-      comment: string;
-      total_comment: number;
-  }[];
+interface BlogPost {
+  id: number;
+  date: string;
+  title: {
+    rendered: string;
+  };
+  link: string;
+  excerpt: {
+    rendered: string;
+  };
+  _embedded?: {
+    ["wp:featuredmedia"]?: {
+      source_url: string;
+      alt_text?: string;
+      media_details?: {
+        sizes?: {
+          medium?: {
+            source_url: string;
+          };
+          medium_large?: {
+            source_url: string;
+          };
+          full?: {
+            source_url: string;
+          };
+        };
+      };
+    }[];
+  };
 }
-
-const blog_content:DataType = {
-  subtitle: "Latest News & Bolg",
-  title: "Latest News & Articals",
-  blog_data: [
-    {
-      id: 1,
-      thumb: blog_thumb_1,
-      date: "Octobor 3, 2023",
-      title: "Powering Asia Pacific's Energy Transition",
-      author: "Bradley R Grady",
-      comment: "Post a Comment",
-      total_comment: 155,
-    },
-    {
-      id: 2,
-      thumb: blog_thumb_2,
-      date: "Octobor 3, 2023",
-      title: "Powering Asia Pacific's Energy Transition",
-      author: "Bradley R Grady",
-      comment: "Post a Comment",
-      total_comment: 104,
-    },
-    {
-      id: 3,
-      thumb: blog_thumb_3,
-      date: "Octobor 3, 2023",
-      title: "Powering Asia Pacific's Energy Transition",
-      author: "Bradley R Grady",
-      comment: "Post a Comment",
-      total_comment: 94,
-    },
-
-  ]
-}
-
-const { subtitle, title, blog_data } = blog_content;
 
 const BlogAreaHomeOne = () => {
+  const [blogData, setBlogData] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await fetch(
+          "https://blog.solpoweraustralia.com.au/wp-json/wp/v2/posts?per_page=3&_embed"
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch blog posts");
+        }
+
+        const data: BlogPost[] = await response.json();
+
+        setBlogData(data);
+      } catch (error) {
+        console.error("Error fetching WordPress blogs:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
   return (
     <>
       <div className="blog-section">
         <div className="container">
+
+          {/* Section Heading */}
           <div className="row">
             <div className="col-lg-12">
               <div className="section-title text-center wow animate__slideInUp">
+
                 <div className="section-sub-title">
-                  <h4>{subtitle}</h4>
+                  <h4>Latest News & Blog</h4>
                 </div>
-                <div className="section-main-title blog ">
-                  <h2>{title}</h2>
+
+                <div className="section-main-title blog">
+                  <h2>Latest News & Articles</h2>
                 </div>
+
               </div>
             </div>
           </div>
-          <div className="row">
-            {blog_data.map((item, i) => (
-              <div key={i} className="col-lg-4 col-md-6">
-                <div className={`blog-items-box wow animate__${i === 0 ? "slideInDown" : i === 1 ? "slideInUp" : "slideInDown"}`}>
-                  <div className="blog-thumb">
-                    <Image src={item.thumb} style={{height: "auto"}} alt="image-title" />
-                  </div>
-                  <div className="blog-date">
-                    <span><i className="bi bi-calendar3"></i>{item.date}</span>
-                  </div>
-                  <div className="blog-content">
-                    <div className="blog-meta">
-                      <span><i className="bi bi-eye"></i> Viwe {item.total_comment}</span>
-                      <span><i className="bi bi-wechat"></i> {item.comment}</span>
-                    </div>
-                    <div className="blog-title">
-                      <h4><Link href="/blog-details">{item.title}</Link></h4>
-                    </div>
-                    {/* <div className="blog-bottom-shape">
-                      <img src="assets/images/resource/blog-shape.png" alt="image-title" />
-                    </div>
-                    <div className="blog-bottom-title">
-                      <h5>{item.author}</h5>
-                    </div> */}
-                    <div className="blog-btn">
-                      <Link href="/blog">More Details <i className="bi bi-arrow-up-right"></i></Link>
-                    </div>
-                  </div>
-                </div>
+
+          {/* Loading */}
+          {loading && (
+            <div className="row">
+              <div className="col-lg-12 text-center">
+                <p>Loading latest blogs...</p>
               </div>
-            ))}
-          </div>
+            </div>
+          )}
+
+          {/* Blog Posts */}
+          {!loading && (
+            <div className="row">
+
+              {blogData.map((item, i) => {
+
+                const featuredImage =
+                  item._embedded?.["wp:featuredmedia"]?.[0]
+                    ?.media_details?.sizes?.medium_large?.source_url ||
+                  item._embedded?.["wp:featuredmedia"]?.[0]
+                    ?.source_url ||
+                  "/assets/images/resource/blog1.png";
+
+                const imageAlt =
+                  item._embedded?.["wp:featuredmedia"]?.[0]?.alt_text ||
+                  item.title.rendered;
+
+                const formattedDate = new Date(
+                  item.date
+                ).toLocaleDateString("en-AU", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                });
+
+                return (
+                  <div
+                    key={item.id}
+                    className="col-lg-4 col-md-6"
+                  >
+                    <div
+                      className={`blog-items-box wow animate__${
+                        i === 1 ? "slideInUp" : "slideInDown"
+                      }`}
+                    >
+
+                      {/* Blog Image */}
+                      <div className="blog-thumb">
+                        <Image
+                          src={featuredImage}
+                          width={600}
+                          height={400}
+                          style={{
+                            height: "auto",
+                            width: "100%",
+                          }}
+                          alt={imageAlt}
+                        />
+                      </div>
+
+                      {/* Date */}
+                      <div className="blog-date">
+                        <span>
+                          <i className="bi bi-calendar3"></i>
+                          {formattedDate}
+                        </span>
+                      </div>
+
+                      {/* Blog Content */}
+                      <div className="blog-content">
+
+                        <div className="blog-meta">
+                          <span>
+                            <i className="bi bi-eye"></i>
+                            Blog
+                          </span>
+
+                          <span>
+                            <i className="bi bi-wechat"></i>
+                            Comments
+                          </span>
+                        </div>
+
+                        {/* Blog Title */}
+                        <div className="blog-title">
+                          <h4>
+                            <a
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              dangerouslySetInnerHTML={{
+                                __html: item.title.rendered,
+                              }}
+                            />
+                          </h4>
+                        </div>
+
+                        {/* More Details */}
+                        <div className="blog-btn">
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            More Details{" "}
+                            <i className="bi bi-arrow-up-right"></i>
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+
+            </div>
+          )}
+
+          {/* No Posts */}
+          {!loading && blogData.length === 0 && (
+            <div className="row">
+              <div className="col-lg-12 text-center">
+                <p>No blog posts available.</p>
+              </div>
+            </div>
+          )}
+
         </div>
       </div>
     </>

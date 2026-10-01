@@ -7,6 +7,7 @@ const GoogleReviewsArea = () => {
     <section className="google-reviews-area">
       <div className="container">
 
+        {/* Section Heading */}
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-9">
             <div className="section-title text-center">
@@ -28,9 +29,15 @@ const GoogleReviewsArea = () => {
 
         {/* Trustindex Google Reviews */}
         <div className="google-reviews-widget">
-          {/* Trustindex widget code goes here */}
+
+          <div
+            className="trustindex"
+            data-widget-id="6807bf882eba589c54661be64cd"
+          />
+
         </div>
 
+        {/* Trustindex Loader */}
         <Script
           src="https://cdn.trustindex.io/loader.js?6807bf882eba589c54661be64cd"
           strategy="afterInteractive"
