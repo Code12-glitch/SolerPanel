@@ -6,7 +6,7 @@ import {
   TeamSocialLinks,
 } from '@/components/common/SocialLinks';
 
-import footer_logo from "@/assets/images/resource/logo-ftr.jpg";
+import footer_logo from "@/assets/images/resource/logo-solpower.webp";
 import footer1 from "@/assets/images/resource/clean-energy-council-member.jpg";
 import footer2 from "@/assets/images/cec-member-logo.webp";
 
