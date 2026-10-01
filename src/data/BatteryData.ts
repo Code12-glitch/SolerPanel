@@ -86,7 +86,7 @@ import project_img_88 from "@/assets/images/greenbank2/8.png";
 import project_img_89 from "@/assets/images/greenbank2/9.png";
 import project_img_90 from "@/assets/images/greenbank2/10.jpg";
 import project_img_91 from "@/assets/images/greenbank2/11.jpg";
-import project_img_92 from "@/assets/images/greenbank2/12.png";
+import project_img_92 from "@/assets/images/greenbank2/12.jpg";
 import project_img_93 from "@/assets/images/anstead/1.png";
 import project_img_94 from "@/assets/images/anstead/2.png";
 import project_img_95 from "@/assets/images/anstead/3.png";

@@ -94,9 +94,9 @@ const AboutAreaHomeOne = (style: any) => {
                       <Image src={about_shape} alt="image-title" />
                     </div>
                     <div className="about-number-two">
-                      <h4 className="counter">Many</h4>
+                      <h4 className="counter"></h4>
                       {/* <span>+</span> */}
-                      <h5>Satisfied Clients</h5>
+                      <h5>Many Satisfied Clients</h5>
                     </div>
                   </div>
                 </div>

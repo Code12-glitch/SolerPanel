@@ -3339,8 +3339,8 @@ blockquote {
 
 .project-content {
   background: #1c1632;
-  padding: 22px 42px 30px;
-  border-radius: 5px;
+  padding: 20px !important;
+  border-radius: 0px 0px 5px 5px;
   position: relative;
   z-index: 1;
 }
