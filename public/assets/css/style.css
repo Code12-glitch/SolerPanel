@@ -147,6 +147,7 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
   position: relative;
   z-index: 999;
   position: relative;
+  padding: 10px;
 }
 
 .solar-header-section::before {
