@@ -638,6 +638,7 @@ a.handbag:before {
 
 .about-thumb img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .about-counter {
