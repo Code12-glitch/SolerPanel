@@ -1219,7 +1219,7 @@ a.handbag:before {
 .service-text p {
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #000;
   font-weight: 400;
   margin: 20px 0 45px;
   position: relative;
@@ -1230,7 +1230,7 @@ a.handbag:before {
   content: "";
   height: 1px;
   width: 310px;
-  background: #e8e8e8;
+  background: #000000;
   bottom: -28px;
   opacity: 0.6;
 }
@@ -1240,13 +1240,18 @@ a.handbag:before {
   font-size: 18px;
   line-height: 24px;
   text-decoration: underline;
-  color: #ffffff;
+  color: #000000;
   font-weight: 400;
   transition: 0.5s;
 }
-
-.service-box:hover .service-text a {
-  color: #fac012;
+.service-box:hover .service-text a,
+.service-box:hover .service-text p {
+  color: white;
+}
+.service-box:hover .service-text p::before {
+  color: #fac012 !important;
+  background-color: #fac012 !important;
+  border-color: #fac012 !important;
 }
 
 .service-text a i {
@@ -6174,6 +6179,18 @@ a.battery-read-more {
   height: 12vh;
   padding-right: 15px;
 }
+@media screen and (max-width: 1024px) {
+  .service-content {
+    margin: -130px 15px 20px;
+  }
+  .service-text p::before {
+    width: 100%;
+  }
+  .service-text p {
+    line-height: 22px;
+    font-size: 16px !important;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .solar-btn a {
     font-size: 12px !important;
@@ -6182,8 +6199,15 @@ a.battery-read-more {
   .solar-menu ul li a {
     padding-right: 10px;
   }
+  .service-text h4 a {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
 }
 @media screen and (max-width: 768px) {
+  .service-content {
+    background-size: cover;
+  }
   .mean-container .mean-nav ul li a {
     font-size: 16px;
     font-weight: 500;
@@ -6214,6 +6238,10 @@ a.battery-read-more {
   }
 }
 @media screen and (max-width: 540px) {
+  .service-content {
+    background-size: cover !important;
+    margin: -130px 20px 33px !important;
+  }
   .mobile-logo img {
     width: 30%;
   }

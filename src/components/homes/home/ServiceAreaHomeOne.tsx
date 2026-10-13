@@ -31,7 +31,7 @@ const ServiceAreaHomeOne = ({style, style_2}: any) => {
           }
           <div className="row">
             {data.map((item, index) => (
-              <div key={index} className="col-lg-4 col-md-6">
+              <div key={index} className="col-lg-4 col-md-12">
                 <div className={`service-box ${style ? "style-two" : ""} wow animate__backInUp`}>
                   <div className="service-thumb">
                     <Image src={item.img} style={{height: 'auto'}} alt="image-title" />
