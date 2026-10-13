@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import about_thumb from "@/assets/images/about/about-thumb.jpg";
+import about_thumb from "@/assets/images/about/about-thumb3.jpg";
 import about_shape from "@/assets/images/about/about-shape.png";
 interface DataType {
   tab_id: string;
