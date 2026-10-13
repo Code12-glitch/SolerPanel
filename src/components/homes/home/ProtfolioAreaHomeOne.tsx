@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import protfolio_thumb from "@/assets/images/project/protfolio-thumb.png";
+import protfolio_thumb from "@/assets/images/project/portfolio-thumb.jpg";
 import prot_hover from "@/assets/images/project/prot-hover.png";
 
 interface PortfolioItem {

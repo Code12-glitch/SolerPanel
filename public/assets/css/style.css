@@ -6179,6 +6179,9 @@ a.battery-read-more {
   height: 12vh;
   padding-right: 15px;
 }
+.protfolio-section .protfolio-thumb img {
+  border-radius: 10px;
+}
 @media screen and (max-width: 1024px) {
   .service-content {
     margin: -130px 15px 20px;
