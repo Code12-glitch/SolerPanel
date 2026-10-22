@@ -94,7 +94,7 @@ const OfferAreaHomeOne = () => {
               </div>
 
               <div className="process-ber-plugin">
-                <span className="process-bar">Customer Satisficed</span>
+                {/* <span className="process-bar">Customer Satisficed</span>
                 <div id="bar1" className="barfiller">
                   <span
                     className="fill"
@@ -107,7 +107,7 @@ const OfferAreaHomeOne = () => {
                     className="fill my-class"
                     style={{ background: 'rgb(22, 181, 151)', width: `${percentage2}%`, transition: 'width 7s ease-in-out 0s' }}
                   ></span>
-                </div>
+                </div> */}
               </div>
 
             </div>
