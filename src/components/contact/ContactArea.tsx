@@ -26,7 +26,7 @@ const contact_content: DataType = {
     {
       id: 0,
       icon: "bi bi-phone-flip",
-      title: "Have a Questions? Call Us",
+      title: "Have a Questions?",
       info: "1800 979 707",
     },
     {

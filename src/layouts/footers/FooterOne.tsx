@@ -74,8 +74,8 @@ const footer_content = {
 
   phone: "1800 979 707",
 
-  address:
-    "WOTSO, 2/194, Varsity Parade, Varsity Lakes, QLD, 4227",
+  address: "Office Address: WOTSO, 2/194, Varsity Parade, Varsity Lakes, QLD, 4227",
+  postal_address: "Postal Address: P O Box 3098, Browns Plains, QLD, 4118",
 
   email: "info@solpoweraustralia.com.au",
 
@@ -94,6 +94,7 @@ const {
   list_items_2,
   title,
   address,
+  postal_address,
   phone,
   email,
   bootom_links,
@@ -191,6 +192,10 @@ const FooterOne = () => {
 
                     <li>
                       {address}
+                    </li>
+
+                    <li>
+                      {postal_address}
                     </li>
 
                     <li>
