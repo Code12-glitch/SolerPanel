@@ -4,7 +4,7 @@ import Wrapper from "@/layouts/Wrapper";
 import Panels from "@/components/panels";
 
 export const metadata = {
-  title: "Solar Panels - SolerPanel",
+  title: "Solar Panels - SolPower Australia",
 };
 
 const PanelsPage = () => {

@@ -6,7 +6,7 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import React from "react";
 
 export const metadata = {
-  title: "Alpha-ESS Battery - SolerPanel",
+  title: "Alpha-ESS Battery - SolPower Australia",
 };
 
 const AlphaESSPage = () => {

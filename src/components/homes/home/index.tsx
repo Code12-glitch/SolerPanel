@@ -20,6 +20,7 @@ import FinanceQuoteHomeOne from "@/components/homes/home/FinanceQuoteHomeOne";
 import SolarPackagesArea from "./SolarPackagesArea";
 import SolarBrandsArea from "./SolarBrandsArea";
 import GoogleReviewsArea from "./GoogleReviewsArea";
+import SolarSavingsHomeOne from "@/components/homes/home/SolarSavingsHomeOne";
 import FAQArea from "./FAQArea";
 
 const HomeOne = () => {
@@ -36,6 +37,8 @@ const HomeOne = () => {
         <FinanceQuoteHomeOne />
         <ContactAreaHomeOne />
         <SolarPackagesArea />
+
+        <SolarSavingsHomeOne />
         <SolarBrandsArea />
         <VedioAreaHomeOne />
         <ProtfolioAreaHomeOne />

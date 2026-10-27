@@ -6,7 +6,7 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import React from "react";
 
 export const metadata = {
-  title: "BYD Battery - SolerPanel",
+  title: "BYD Battery - SolPower Australia",
 };
 
 const BYDPage = () => {

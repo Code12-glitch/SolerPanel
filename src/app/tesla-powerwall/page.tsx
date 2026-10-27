@@ -6,7 +6,7 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import React from "react";
 
 export const metadata = {
-  title: "Tesla Powerwall - SolerPanel",
+  title: "Tesla Powerwall - SolPower Australia",
 };
 
 const TeslaPowerwallPage = () => {

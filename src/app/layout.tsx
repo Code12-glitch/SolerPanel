@@ -2,7 +2,7 @@ import "../style/index.scss";
 import Script from "next/script";
 
 export const metadata = {
-  title: "SolerPanel - Solar & Renewable Energy",
+  title: "SolPower Australia - Solar & Renewable Energy",
   description:
     "Modern solar and renewable energy solutions.",
 };

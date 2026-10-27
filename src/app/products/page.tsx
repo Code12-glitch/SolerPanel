@@ -3,7 +3,7 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
 export const metadata = {
-  title: 'Products - SolerPanel',
+  title: 'Products - SolPower Australia',
   description: 'Explore solar panels, inverters and battery storage products from Solpower Australia.',
 };
 

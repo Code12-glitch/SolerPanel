@@ -1,0 +1,553 @@
+
+.page {
+  padding: 0 0 70px;
+  background: #fff;
+  color: #434141;
+}
+
+.hero {
+  max-width: none;
+  margin: 0 0 45px;
+  padding: 80px 20px 65px;
+  background: #19142d;
+  color: #fff;
+  text-align: center;
+
+  h1 {
+    margin: 14px 0;
+    color: #fff;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+    font-weight: 700;
+  }
+
+  p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #e5e5e5;
+    line-height: 1.8;
+  }
+}
+
+.sizingGuide {
+  padding: 0 0 60px;
+  background: #fff;
+}
+
+.guideContainer,
+.faqContainer {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.guideHeading {
+  margin: 0 auto 28px;
+  text-align: center;
+
+  h2 {
+    margin: 12px 0 0;
+    color: #1c1632;
+    font-size: clamp(28px, 4vw, 36px);
+  }
+}
+
+.guideGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.guideCard {
+  padding: 22px;
+  border: 1px solid #eceff8;
+  border-radius: 14px;
+  background: #fff;
+
+  h3 {
+    margin: 14px 0 8px;
+    color: #1c1632;
+    font-size: 19px;
+  }
+
+  p {
+    margin: 0;
+    color: #434141;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.guideNumber {
+  color: #fac012;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.eyebrow,
+.category {
+  color: #fac012;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+  width: min(1320px, calc(100% - 40px));
+  margin: 0 auto;
+  align-items: start;
+}
+
+.builder,
+.summary {
+  background: #fff;
+  border: 1px solid #eceff8;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(25, 20, 45, 0.05);
+}
+
+.builder {
+  overflow: hidden;
+}
+
+.progress {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  padding: 18px;
+  background: #f8f8fa;
+  border-bottom: 1px solid #eceff8;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 5px;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    color: #434141;
+    font-size: 14px;
+    cursor: pointer;
+
+    span {
+      display: grid;
+      place-items: center;
+      width: 25px;
+      height: 25px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: #eceff8;
+    }
+  }
+
+  .activeStep {
+    color: #19142d;
+    background: rgba(250, 192, 18, 0.14);
+    font-weight: 700;
+
+    span {
+      background: #fac012;
+      color: #19142d;
+    }
+  }
+}
+
+.section {
+  padding: 30px;
+
+  h2 {
+    margin: 0 0 10px;
+    font-size: 27px;
+  }
+
+  > p {
+    margin-bottom: 25px;
+    color: #434141;
+    line-height: 1.6;
+  }
+}
+
+.applianceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.appliance {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #eceff8;
+  border-radius: 12px;
+
+  h3 {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  p {
+    margin: 0 0 15px;
+    color: #434141;
+    font-size: 13px;
+  }
+}
+
+.add,
+.remove {
+  border: 0;
+  background: transparent;
+  color: #141422;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  label {
+    display: grid;
+    gap: 5px;
+    color: #434141;
+    font-size: 12px;
+  }
+
+  input {
+    width: 100%;
+    min-width: 0;
+    padding: 9px;
+    border: 1px solid #eceff8;
+    border-radius: 7px;
+  }
+
+  .remove {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
+.usage {
+  display: grid;
+  gap: 8px;
+  margin-top: 22px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(250, 192, 18, 0.14);
+
+  strong {
+    font-size: 28px;
+    color: #1c1632;
+  }
+
+  span {
+    color: #434141;
+    font-size: 13px;
+  }
+}
+
+.field {
+  display: grid;
+  gap: 12px;
+  margin: 25px 0;
+  font-weight: 600;
+
+  select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #eceff8;
+    border-radius: 9px;
+    background: #fff;
+    color: #434141;
+  }
+
+  input[type="range"] {
+    width: 100%;
+    accent-color: #fac012;
+  }
+}
+
+.notice {
+  margin: 22px 0;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f8f8fa;
+  color: #434141;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 25px 0;
+
+  input {
+    margin-top: 4px;
+    accent-color: #fac012;
+  }
+
+  span {
+    display: grid;
+    gap: 6px;
+  }
+
+  small {
+    color: #434141;
+  }
+}
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+
+  article {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #eceff8;
+    border-radius: 12px;
+  }
+
+  span {
+    color: #434141;
+    font-size: 13px;
+  }
+
+  strong {
+    font-size: 25px;
+  }
+}
+
+.quoteForm {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+
+  input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #eceff8;
+    border-radius: 8px;
+  }
+}
+
+.quoteConfirmation {
+  margin: 14px 0 0;
+  padding: 14px;
+  border-left: 4px solid #fac012;
+  background: rgba(250, 192, 18, 0.14);
+  color: #1c1632;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 30px;
+  border-top: 1px solid #eceff8;
+
+  span {
+    color: #434141;
+    font-size: 13px;
+  }
+}
+
+.back,
+.next,
+.quoteForm button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.back {
+  background: #f8f8fa;
+  color: #1c1632;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.next,
+.quoteForm button {
+  background: #fac012;
+  color: #19142d;
+}
+
+.summary {
+  position: sticky;
+  top: 20px;
+  padding: 24px;
+
+  h2 {
+    margin: 10px 0 24px;
+    font-size: 22px;
+  }
+
+  p {
+    color: #434141;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eceff8;
+  }
+
+  > .next {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+.summaryLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 17px 0;
+  font-size: 13px;
+
+  span {
+    color: #434141;
+  }
+}
+
+.estimateLabel {
+  color: #434141;
+  font-size: 12px;
+}
+
+.price {
+  display: block;
+  margin: 10px 0;
+  font-size: 32px;
+  color: #1c1632;
+}
+
+.summaryWarning {
+  margin: 12px 0;
+  padding: 12px;
+  border-left: 4px solid #fac012;
+  background: rgba(250, 192, 18, 0.14);
+  color: #1c1632;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.faqSection {
+  padding: 70px 0 85px;
+  background: #f8f8fa;
+}
+
+.faqContainer {
+  max-width: 1320px;
+
+  h2 {
+    margin: 0 0 25px;
+    color: #1c1632;
+    font-size: clamp(28px, 4vw, 36px);
+  }
+
+  details {
+    padding: 20px 0;
+    border-bottom: 1px solid #eceff8;
+  }
+
+  summary {
+    color: #1c1632;
+    font-weight: 700;
+    line-height: 1.6;
+    cursor: pointer;
+  }
+
+  details p {
+    margin: 12px 0 0;
+    color: #434141;
+    line-height: 1.8;
+  }
+
+  a {
+    color: #141422;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #fac012;
+    text-underline-offset: 3px;
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .guideGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .summary {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding-bottom: 45px;
+  }
+
+  .hero {
+    padding: 55px 20px 45px;
+  }
+
+  .layout {
+    width: calc(100% - 28px);
+  }
+
+  .guideContainer,
+  .faqContainer {
+    width: calc(100% - 28px);
+  }
+
+  .guideGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress {
+    padding: 10px;
+    gap: 2px;
+
+    button {
+      flex-direction: column;
+      font-size: 10px;
+    }
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .applianceGrid,
+  .resultGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation {
+    padding: 16px;
+  }
+}

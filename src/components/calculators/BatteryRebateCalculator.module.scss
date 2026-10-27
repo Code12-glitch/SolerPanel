@@ -1,0 +1,439 @@
+
+.page {
+  color: #434141;
+  background: #fff;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 76px 0 72px;
+  
+  background: #19142d;
+  text-align: center;
+
+  h1 {
+    margin: 14px 0;
+    color: #fff;
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.15;
+    font-weight: 700;
+  }
+
+  p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #e5e5e5;
+    line-height: 1.8;
+  }
+}
+
+.eyebrow {
+  color: #fac012;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.calculatorSection {
+  padding: 65px 0 75px;
+}
+
+.calculatorGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: start;
+  gap: 28px;
+}
+
+.formCard,
+.resultCard {
+  padding: 32px;
+  border: 1px solid #eceff8;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(25, 20, 45, 0.06);
+}
+
+.step {
+  color: #fac012;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.formCard h2 {
+  margin: 12px 0;
+  color: #1c1632;
+  font-size: 30px;
+}
+
+.description {
+  margin-bottom: 30px;
+  color: #434141;
+  line-height: 1.7;
+}
+
+.capacityHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+
+  label {
+    font-weight: 700;
+  }
+}
+
+.capacityValue {
+  color: #1c1632;
+  font-size: 29px;
+  font-weight: 700;
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.slider {
+  width: 100%;
+  accent-color: #fac012;
+  cursor: pointer;
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  color: #434141;
+  font-size: 12px;
+}
+
+.quickSizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 24px 0 32px;
+}
+
+.sizeButton,
+.sizeButtonActive {
+  padding: 10px 13px;
+  border: 1px solid #eceff8;
+  border-radius: 8px;
+  background: #fff;
+  color: #1c1632;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.sizeButton:hover,
+.sizeButtonActive {
+  border-color: #fac012;
+  background: rgba(250, 192, 18, 0.14);
+  color: #19142d;
+}
+
+.postcodeField {
+  display: grid;
+  gap: 10px;
+
+  label {
+    font-weight: 700;
+  }
+
+  label span {
+    color: #434141;
+    font-weight: 400;
+  }
+
+  input {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 14px;
+    border: 1px solid #eceff8;
+    border-radius: 8px;
+    background: #fff;
+    color: #434141;
+    font: inherit;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: 2px solid #fac012;
+      outline-offset: 2px;
+    }
+  }
+
+  small {
+    color: #434141;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+
+.resultCard {
+  border-color: #eceff8;
+  background: #fff;
+}
+
+.resultLabel {
+  color: #434141;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.totalAmount {
+  margin-top: 14px;
+  color: #1c1632;
+  font-size: clamp(38px, 5vw, 50px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.resultDescription {
+  margin: 10px 0 22px;
+  color: #434141;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.divider {
+  height: 1px;
+  margin: 22px 0;
+  background: #eceff8;
+}
+
+.tierHeading,
+.tierRow,
+.totalRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.tierHeading {
+  margin-bottom: 18px;
+
+  h3 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  span {
+    color: #434141;
+    font-size: 11px;
+    text-align: right;
+  }
+}
+
+.tierRow {
+  padding: 15px 0;
+  border-bottom: 1px solid #eceff8;
+
+  > div {
+    display: grid;
+    gap: 6px;
+  }
+
+  > strong {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  div strong {
+    font-size: 14px;
+  }
+
+  span {
+    color: #434141;
+    font-size: 12px;
+  }
+}
+
+.totalRow {
+  padding: 20px 0;
+  color: #1c1632;
+  font-size: 14px;
+}
+
+.resultNote {
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(250, 192, 18, 0.14);
+  color: #1c1632;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.quoteButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-radius: 9px;
+  background: #fac012;
+  color: #19142d;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #e3ad00;
+    color: #19142d;
+  }
+
+  span {
+    font-size: 22px;
+  }
+}
+
+.disclaimer {
+  margin: 16px 0 0;
+  color: #434141;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.informationSection {
+  padding: 75px 0 90px;
+  background: #f8f8fa;
+}
+
+.sectionHeading {
+  max-width: 750px;
+  margin: 0 auto 38px;
+  text-align: center;
+
+  h2 {
+    margin: 14px 0;
+    color: #1c1632;
+    font-size: clamp(30px, 4vw, 42px);
+  }
+
+  p {
+    color: #434141;
+    line-height: 1.8;
+  }
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.infoCard {
+  padding: 25px;
+  border: 1px solid #eceff8;
+  border-radius: 12px;
+  background: #fff;
+
+  h3 {
+    margin: 16px 0 10px;
+    color: #1c1632;
+    font-size: 19px;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: #434141;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+.infoNumber {
+  color: #fac012;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.faq {
+  max-width: 1320px;
+  margin: 70px auto 0;
+
+  > h2 {
+    margin-bottom: 25px;
+    color: #1c1632;
+    font-size: 30px;
+  }
+
+  details {
+    padding: 20px 0;
+    border-bottom: 1px solid #eceff8;
+  }
+
+  summary {
+    color: #1c1632;
+    font-weight: 700;
+    line-height: 1.6;
+    cursor: pointer;
+  }
+
+  details p {
+    margin: 14px 0 0;
+    color: #434141;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding: 55px 0;
+  }
+
+  .calculatorSection,
+  .informationSection {
+    padding: 45px 0;
+  }
+
+  .calculatorGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formCard,
+  .resultCard {
+    padding: 24px;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .formCard,
+  .resultCard {
+    padding: 19px;
+  }
+
+  .capacityHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .totalAmount {
+    font-size: 39px;
+  }
+}

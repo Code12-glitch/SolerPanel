@@ -6,7 +6,7 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import React from "react";
 
 export const metadata = {
-  title: "Sungrow Battery - SolerPanel",
+  title: "Sungrow Battery - SolPower Australia",
 };
 
 const SungrowPage = () => {
