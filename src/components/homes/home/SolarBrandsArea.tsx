@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -180,7 +179,7 @@ const SolarBrandsArea = () => {
             <div className="section-title text-center">
               <span className="sub-title">OUR BRANDS</span>
 
-              <h2>Our Solar Panel &amp; Inverters Brands</h2>
+              <h2>Our Solar Panel &amp; Inverter Brands</h2>
 
               <p>
                 We work with reputable solar panel and inverter brands to
@@ -197,6 +196,7 @@ const SolarBrandsArea = () => {
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
             spaceBetween={25}
             slidesPerView={2}
