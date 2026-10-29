@@ -7,7 +7,7 @@ import CtaAreaHomeOne from '../home/CtaAreaHomeOne';
 import TeamAreaHomeOne from '../home/TeamAreaHomeOne';
 import VedioAreaHomeOne from '../home/VedioAreaHomeOne';
 import ContactAreaHomeOne from '../home/ContactAreaHomeOne';
-import TestiomonialAreaHomeTwo from './TestiomonialAreaHomeTwo';
+import GoogleReviewsArea from '../home/GoogleReviewsArea';
 import CtaAreaHomeTwo from './CtaAreaHomeTwo';
 import BlogAreaHomeOne from '../home/BlogAreaHomeOne';
 import SubscribeAreaHomeOne from '../home/SubscribeAreaHomeOne';
@@ -26,7 +26,7 @@ const HomeTwo = () => {
         <TeamAreaHomeOne style={true} />
         <VedioAreaHomeOne style={true} />
         <ContactAreaHomeOne />
-        <TestiomonialAreaHomeTwo />
+        <GoogleReviewsArea />
         <CtaAreaHomeTwo />
         <BlogAreaHomeOne />
         <SubscribeAreaHomeOne />

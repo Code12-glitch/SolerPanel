@@ -3,7 +3,7 @@
 
 ## Google reviews
 
-The home page loads the business rating and reviews from Google Places and links
+The home pages load the business rating and reviews from Google Places and link
 to the place on Google Maps. Configure the Maps JavaScript API and Places API
 (New) browser key and place ID in the project-root `.env.local`:
 
