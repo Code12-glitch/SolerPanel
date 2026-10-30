@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -7,25 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
 const GOOGLE_PLACE_ID =
-  process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID ||
-  "ChIJjciTSuMDkWsRVC0K3XzU0dc";
-const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+  process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "";
 const GOOGLE_REVIEWS_URL = `https://www.google.com/maps/search/?api=1&query=SOLPOWER+AUSTRALIA&query_place_id=${encodeURIComponent(
   GOOGLE_PLACE_ID,
 )}`;
-
-const getGoogleErrorMessage = (error: unknown): string => {
-  const message =
-    error instanceof Error
-      ? error.message
-      : typeof error === "string"
-        ? error
-        : "Unknown Google Maps error.";
-
-  return GOOGLE_MAPS_API_KEY
-    ? message.split(GOOGLE_MAPS_API_KEY).join("[redacted]")
-    : message;
-};
 
 interface GoogleReview {
   authorAttribution?: {
@@ -36,86 +20,6 @@ interface GoogleReview {
   relativePublishTimeDescription?: string;
   text?: string;
 }
-
-interface GooglePlace {
-  displayName?: string;
-  rating?: number;
-  userRatingCount?: number;
-  reviews?: GoogleReview[];
-  fetchFields: (options: { fields: string[] }) => Promise<void>;
-}
-
-interface GooglePlacesLibrary {
-  Place: new (options: { id: string }) => GooglePlace;
-}
-
-interface GoogleMapsNamespace {
-  maps?: {
-    importLibrary?: (name: "places") => Promise<GooglePlacesLibrary>;
-  };
-}
-
-declare global {
-  interface Window {
-    google?: GoogleMapsNamespace;
-    googleMapsPlacesReady?: () => void;
-  }
-}
-
-let placesLibraryPromise: Promise<GooglePlacesLibrary> | undefined;
-
-const loadPlacesLibrary = (): Promise<GooglePlacesLibrary> => {
-  if (placesLibraryPromise) {
-    return placesLibraryPromise;
-  }
-
-  placesLibraryPromise = new Promise<GooglePlacesLibrary>(
-    (resolve, reject) => {
-      const importPlaces = () => {
-        const maps = window.google?.maps;
-        if (!maps?.importLibrary) {
-          reject(new Error("Google Maps JavaScript API did not initialize."));
-          return;
-        }
-
-        delete window.googleMapsPlacesReady;
-        try {
-          maps.importLibrary("places").then(resolve, reject);
-        } catch (error: unknown) {
-          reject(error);
-        }
-      };
-
-      if (window.google?.maps?.importLibrary) {
-        importPlaces();
-        return;
-      }
-
-      const script = document.createElement("script");
-      script.id = "google-maps-places-script";
-      const params = new URLSearchParams({
-        callback: "googleMapsPlacesReady",
-        key: GOOGLE_MAPS_API_KEY ?? "",
-        loading: "async",
-        v: "weekly",
-      });
-      script.src = `https://maps.googleapis.com/maps/api/js?${params.toString()}`;
-      script.async = true;
-      window.googleMapsPlacesReady = importPlaces;
-      script.onerror = () => {
-        delete window.googleMapsPlacesReady;
-        script.remove();
-        reject(new Error("Google Maps JavaScript API could not be loaded."));
-      };
-      document.head.appendChild(script);
-    },
-  ).catch((error: unknown) => {
-    placesLibraryPromise = undefined;
-    throw error;
-  });
-
-  return placesLibraryPromise;
-};
 
 interface PlaceReviews {
   name: string;
@@ -138,38 +42,31 @@ const GoogleReviewsArea = () => {
       setIsLoading(true);
       setError(null);
 
-      if (!GOOGLE_MAPS_API_KEY) {
-        setError(
-          "Google reviews are unavailable because the Maps API key is not configured.",
-        );
-        setIsLoading(false);
-        return;
-      }
-
       try {
-        const { Place } = await loadPlacesLibrary();
-        const googlePlace = new Place({ id: GOOGLE_PLACE_ID });
-        await googlePlace.fetchFields({
-          fields: [
-            "displayName",
-            "rating",
-            "userRatingCount",
-            "reviews",
-          ],
+        const res = await fetch("/api/google-reviews", {
+          cache: "no-store",
         });
+
+        if (!res.ok) {
+          throw new Error(`Failed to load reviews (${res.status})`);
+        }
+
+        const data = await res.json();
 
         if (isActive) {
           setPlace({
-            name: googlePlace.displayName || "SOLPOWER AUSTRALIA",
-            rating: googlePlace.rating,
-            userRatingCount: googlePlace.userRatingCount,
-            reviews: googlePlace.reviews ?? [],
+            name: data.name ?? "SOLPOWER AUSTRALIA",
+            rating: data.rating,
+            userRatingCount: data.userRatingCount,
+            reviews: data.reviews ?? [],
           });
         }
-      } catch (error: unknown) {
+      } catch (err: unknown) {
         if (isActive) {
           setError(
-            `Google reviews could not be loaded: ${getGoogleErrorMessage(error)}. Check the Maps API key, enabled APIs, and referrer restrictions, then try again.`,
+            `Google reviews could not be loaded: ${
+              err instanceof Error ? err.message : String(err)
+            }.`,
           );
         }
       } finally {
