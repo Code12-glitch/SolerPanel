@@ -40,6 +40,12 @@ const menu_data: DataType[] = [
 	},
 	{
 		id: 4,
+		title: "Solar Savings",
+		link: "/solar-savings",
+		has_dropdown: false,
+	},
+	{
+		id: 4,
 		title: "Products",
 		link: "/products",
 		has_dropdown: true,
