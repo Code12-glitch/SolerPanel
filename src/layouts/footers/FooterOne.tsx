@@ -31,6 +31,10 @@ const footer_content = {
       link: "/service",
     },
     {
+      title: "Solar Savings",
+      link: "/solar-savings",
+    },
+    {
       title: "Product",
       link: "/products",
     },
